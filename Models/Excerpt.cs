@@ -24,7 +24,7 @@ namespace DataSorting.Models
 		public Excerpt(int m, PDLController pdlController, SortController sortController)
 		{
 			Arr = new int[m, 4];
-			Equations = new double[2][3];
+			Equations = new double[2][];
 			this.pdlController = pdlController;
 			this.sortController = sortController;
 		}
@@ -33,6 +33,8 @@ namespace DataSorting.Models
 			Random rnd = new Random();
 
 			Equations[0][0] = Arr.Length;
+			Equations[0] = new double[3];
+			Equations[1] = new double[3];
 
 			for (int i = 0; i < Arr.Length; i++)
 			{
