@@ -3,28 +3,28 @@ using System.Collections.Generic;
 
 namespace DataSorting.Models
 {
-	public abstract class IPDL
+	public abstract class APDL
 	{
 		public abstract int n { get; set; }
 		public abstract float[] arr { get; set; }
 		public abstract int randMax { get; set; }
 		public abstract Random rnd { get; set; }
-		public Dictionary<string, int> parameters { get; set; }
+		public Dictionary<string, float> parameters { get; set; }
 		public abstract float GenValue();
 		public abstract void FillArr();
 	}
 
-	public class Fisk : IPDL
+	public class Fisk : APDL
 	{
 		public override int n { get; set; }
 		public override float[] arr { get; set; }
 		public override int randMax { get; set; }
 		public override Random rnd { get; set; }
 
-		public  int A { get; set; }
+		public float A { get; set; }
 
-		int b;
-		public int B
+		float b;
+		public float B
 		{
 			get { return b; }
 			set
@@ -35,8 +35,8 @@ namespace DataSorting.Models
 			}
 		}
 
-		int c;
-		public int C
+		float c;
+		public float C
 		{
 			get { return c; }
 			set
@@ -50,7 +50,7 @@ namespace DataSorting.Models
 		public Fisk() {
 			randMax = 32767;
 			rnd = new Random();
-			parameters = new Dictionary<string, int>();
+			parameters = new Dictionary<string, float>();
 		}
 
 		public override float GenValue()

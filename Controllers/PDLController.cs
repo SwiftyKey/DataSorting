@@ -6,17 +6,15 @@ namespace DataSorting.Controllers
 {
 	public class PDLController
 	{
-		public IPDL pdl { get; set; }
+		public APDL PDL { get; set; }
 
-		public PDLController(IPDL pdl, Dictionary<string, int> kwargs, int n)
+		public PDLController(APDL pdl, Dictionary<string, float> kwargs, int n)
 		{
-			this.pdl = pdl;
-			pdl.n = n;
+			PDL = pdl;
+			PDL.n = n;
 			foreach (var key in kwargs.Keys) 
-			{
-				this.pdl.parameters[key] = kwargs[key];
-			}
-			pdl.FillArr();
+				PDL.parameters[key] = kwargs[key];
+			PDL.FillArr();
 		}
 	}
 }
