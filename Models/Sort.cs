@@ -7,17 +7,17 @@ namespace DataSorting.Models
 	public abstract class ASort
 	{
 		public abstract (int, int, long) Indicators { get; set; }
-		public abstract float[] Sort(float[] arr);
+		public abstract double[] Sort(double[] arr);
 	}
 
 	public class MergeSort : ASort
 	{
 		public override (int, int, long) Indicators { get; set; }
 
-		float[] Merge(float[] arr1, float[] arr2, ref int c, ref int p)
+		double[] Merge(double[] arr1, double[] arr2, ref int c, ref int p)
 		{
 			int ptr1 = 0, ptr2 = 0;
-			float[] merged = new float[arr1.Length + arr2.Length];
+			double[] merged = new double[arr1.Length + arr2.Length];
 
 			for (int i = 0; i < merged.Length; ++i)
 			{
@@ -45,7 +45,7 @@ namespace DataSorting.Models
 			return merged;
 		}
 
-		float[] Sort(float[] arr, ref int c, ref int p)
+		double[] Sort(double[] arr, ref int c, ref int p)
 		{
 			if (arr.Length == 1)
 				return arr;
@@ -55,7 +55,7 @@ namespace DataSorting.Models
 						 Sort(arr.Skip(middle).ToArray(), ref c, ref p), ref c, ref p);
 		}
 
-		public override float[] Sort(float[] arr)
+		public override double[] Sort(double[] arr)
 		{
 			var watch = new Stopwatch();
 			int comparisons = 0, permutations = 0;

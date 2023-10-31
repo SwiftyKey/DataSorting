@@ -8,10 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Reflection;
 
 using DataSorting.Controllers;
 using DataSorting.Models;
-using System.Reflection;
 
 namespace DataSorting
 {
@@ -19,6 +19,7 @@ namespace DataSorting
 	{
 		private PDLController pdlController;
 		private SortController sortController;
+		private ExcerptController excerptController;
 
 		public MainWindow()
 		{
@@ -29,7 +30,7 @@ namespace DataSorting
 			this.toolStripComboBoxSort.SelectedIndex = 0;
 		}
 
-		private void FillListView(ListView lv, float[] arr)
+		private void FillListView(ListView lv, double[] arr)
 		{
 			for (int i = 0; i < arr.Length; i++)
 				lv.Items.Add(new ListViewItem(new[] { (i + 1).ToString(), arr[i].ToString() }));
@@ -58,10 +59,10 @@ namespace DataSorting
 			ClearOutput();
 
 			APDL pdl = (APDL)GetModel("DataSorting.Models.", toolStripComboBoxPDL.Text);
-			var parameters = new Dictionary<string, float>() {
-				{"A", float.Parse(textBoxA.Text)},
-				{"B", float.Parse(textBoxB.Text)},
-				{"C", float.Parse(textBoxC.Text)}
+			var parameters = new Dictionary<string, double>() {
+				{"A", double.Parse(textBoxA.Text)},
+				{"B", double.Parse(textBoxB.Text)},
+				{"C", double.Parse(textBoxC.Text)}
 			};
 			pdlController = new PDLController(pdl, parameters, (int)numericUpDownN.Value);
 
@@ -89,7 +90,21 @@ namespace DataSorting
 		private void buttonCalc_Click(object sender, EventArgs e)
 		{
 			var m = int.Parse(textBoxM.Text);
+			excerptController = new ExcerptController(m, pdlController, sortController);
 
+			for (int i = 0; i < excerptController.Excerpt.Arr.Length; i++)
+				listViewSourceData.Items.Add(new ListViewItem(new[] { (i + 1).ToString(), 
+				excerptController.Excerpt.Arr[i, 0].ToString(),
+				excerptController.Excerpt.Arr[i, 1].ToString(),
+				excerptController.Excerpt.Arr[i, 2].ToString(),
+				excerptController.Excerpt.Arr[i, 3].ToString() }));
+
+			textBoxA0.Text = excerptController.Excerpt.A0.ToString();
+			textBoxA1.Text = excerptController.Excerpt.A1.ToString();
+			textBoxCoefCor.Text = excerptController.Excerpt.CoefCor.ToString();
+			textBoxCoefDeterm.Text = excerptController.Excerpt.CoefDeterm.ToString();
+			textBoxCoefEl.Text = excerptController.Excerpt.CoefEl.ToString();
+			textBoxBetaCoef.Text = excerptController.Excerpt.BetaCoef.ToString();
 		}
 
 		private void buttonClear2_Click(object sender, EventArgs e)
@@ -120,9 +135,9 @@ namespace DataSorting
 			pictureBoxFx.Image = (Bitmap)fp.GetValue(new DataSorting.Properties.Resources());
 		}
 
-		private void labelM_Click(object sender, EventArgs e)
+		private void textBoxM_TextChanged(object sender, EventArgs e)
 		{
-
+			buttonCalc.Enabled = (textBoxM.Text != "");
 		}
 	}
 }

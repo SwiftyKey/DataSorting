@@ -78,7 +78,7 @@ namespace DataSorting
 			this.textBoxCoefCor = new System.Windows.Forms.TextBox();
 			this.textBoxSecondLine = new System.Windows.Forms.TextBox();
 			this.textBoxFirstLine = new System.Windows.Forms.TextBox();
-			this.textBox10 = new System.Windows.Forms.TextBox();
+			this.textBoxA1 = new System.Windows.Forms.TextBox();
 			this.textBoxCoefDeterm = new System.Windows.Forms.TextBox();
 			this.textBoxCoefEl = new System.Windows.Forms.TextBox();
 			this.textBoxA0 = new System.Windows.Forms.TextBox();
@@ -441,7 +441,7 @@ namespace DataSorting
 			this.tabPageConEq.Controls.Add(this.textBoxCoefCor);
 			this.tabPageConEq.Controls.Add(this.textBoxSecondLine);
 			this.tabPageConEq.Controls.Add(this.textBoxFirstLine);
-			this.tabPageConEq.Controls.Add(this.textBox10);
+			this.tabPageConEq.Controls.Add(this.textBoxA1);
 			this.tabPageConEq.Controls.Add(this.textBoxCoefDeterm);
 			this.tabPageConEq.Controls.Add(this.textBoxCoefEl);
 			this.tabPageConEq.Controls.Add(this.textBoxA0);
@@ -625,15 +625,15 @@ namespace DataSorting
 			this.textBoxFirstLine.TabIndex = 17;
 			this.textBoxFirstLine.TabStop = false;
 			// 
-			// textBox10
+			// textBoxA1
 			// 
-			this.textBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBox10.Location = new System.Drawing.Point(244, 349);
-			this.textBox10.Name = "textBox10";
-			this.textBox10.ReadOnly = true;
-			this.textBox10.Size = new System.Drawing.Size(102, 26);
-			this.textBox10.TabIndex = 16;
-			this.textBox10.TabStop = false;
+			this.textBoxA1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.textBoxA1.Location = new System.Drawing.Point(244, 349);
+			this.textBoxA1.Name = "textBoxA1";
+			this.textBoxA1.ReadOnly = true;
+			this.textBoxA1.Size = new System.Drawing.Size(102, 26);
+			this.textBoxA1.TabIndex = 16;
+			this.textBoxA1.TabStop = false;
 			// 
 			// textBoxCoefDeterm
 			// 
@@ -671,6 +671,7 @@ namespace DataSorting
 			this.textBoxM.Name = "textBoxM";
 			this.textBoxM.Size = new System.Drawing.Size(86, 26);
 			this.textBoxM.TabIndex = 1;
+			this.textBoxM.TextChanged += new System.EventHandler(this.textBoxM_TextChanged);
 			// 
 			// labelBetaCoef
 			// 
@@ -779,7 +780,6 @@ namespace DataSorting
 			this.labelM.Size = new System.Drawing.Size(161, 20);
 			this.labelM.TabIndex = 0;
 			this.labelM.Text = "Объем выборки(M)=";
-			this.labelM.Click += new System.EventHandler(this.labelM_Click);
 			// 
 			// ToolStripMenuUser
 			// 
@@ -933,7 +933,7 @@ namespace DataSorting
 		private TextBox textBoxCoefCor;
 		private TextBox textBoxSecondLine;
 		private TextBox textBoxFirstLine;
-		private TextBox textBox10;
+		private TextBox textBoxA1;
 		private TextBox textBoxCoefDeterm;
 		private TextBox textBoxCoefEl;
 		private TextBox textBoxA0;

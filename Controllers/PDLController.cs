@@ -8,7 +8,7 @@ namespace DataSorting.Controllers
 	{
 		public APDL PDL { get; set; }
 
-		public PDLController(APDL pdl, Dictionary<string, float> kwargs, int n)
+		public PDLController(APDL pdl, Dictionary<string, double> kwargs, int n)
 		{
 			PDL = pdl;
 			PDL.n = n;

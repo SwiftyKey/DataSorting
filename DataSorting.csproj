@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\DBController.cs" />
+    <Compile Include="Controllers\ExcerptController.cs" />
     <Compile Include="Controllers\PDLController.cs" />
     <Compile Include="Controllers\SortController.cs" />
     <Compile Include="Models\Excerpt.cs" />
