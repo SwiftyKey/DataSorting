@@ -11,7 +11,11 @@ namespace DataSorting.Models
 	{
 		private PDLController pdlController;
 		private SortController sortController;
+		private double squareSumY;
+		private double meanSumX;
+		private double meanSumY;
 
+		public int M {  get; set; }
 		public int[,] Arr { get; set; }
 		public double[][] Equations { get; set; }
 		public double A0 { get; set; }
@@ -23,6 +27,7 @@ namespace DataSorting.Models
 
 		public Excerpt(int m, PDLController pdlController, SortController sortController)
 		{
+			M = m;
 			Arr = new int[m, 4];
 			Equations = new double[2][];
 			this.pdlController = pdlController;
@@ -46,6 +51,7 @@ namespace DataSorting.Models
 				Arr[i, 1] = pdlController.PDL.n;
 				Arr[i, 2] = Arr[i, 1] * Arr[i, 1];
 				Arr[i, 3] = Arr[i, 0] * Arr[i, 1];
+				squareSumY += Math.Pow(Arr[i, 0], 2);
 
 				Equations[0][1] += Arr[i, 1];
 				Equations[0][2] += Arr[i, 0];
@@ -54,10 +60,17 @@ namespace DataSorting.Models
 				Equations[1][1] += Arr[i, 2];
 				Equations[1][2] += Arr[i, 3];
 			}
+			meanSumX = Equations[0][1] / M;
+			meanSumY = Equations[0][2] / M;
 
 			double[] result = Gauss(Equations);
 			A0 = result[0];
 			A1 = result[1];
+
+			CalcCoefCor();
+			CalcCoefDeterm();
+			CalcCoefEl();
+			CalcBetaCoef();
 		}
 
 		private double[] Gauss(double[][] rows)
@@ -99,6 +112,33 @@ namespace DataSorting.Models
 				result[i] = val / rows[i][i];
 			}
 			return result;
+		}
+
+		private void CalcCoefCor()
+		{
+			CoefCor = (M * Equations[1][2] - Equations[0][1] * Equations[0][2]) / 
+			Math.Sqrt((M * Equations[1][1] - Math.Pow(Equations[0][1], 2)) * 
+			(M * squareSumY - Math.Pow(Equations[0][2], 2)));
+		}
+
+		private void CalcCoefDeterm() => CoefDeterm = Math.Pow(CoefCor, 2);
+
+		private void CalcCoefEl() => CoefEl = A1 / meanSumY * meanSumX;
+
+		private void CalcBetaCoef()
+		{
+			double meanSquareErrorX = 0, meanSquareErrorY = 0;
+
+			for (int i = 0; i < Arr.Length; i++)
+			{
+				meanSquareErrorX += Math.Pow(Arr[i, 1] - meanSumX, 2);
+				meanSquareErrorY += Math.Pow(Arr[i, 0] - meanSumY, 2);
+			}
+
+			meanSquareErrorX = Math.Sqrt(meanSquareErrorX / M);
+			meanSquareErrorY = Math.Sqrt(meanSquareErrorY / M);
+
+			BetaCoef = A1 / meanSquareErrorY * meanSquareErrorX;
 		}
 	}
 }

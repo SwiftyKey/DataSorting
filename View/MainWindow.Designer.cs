@@ -169,8 +169,9 @@ namespace DataSorting
 			// 
 			// buttonClear
 			// 
+			this.buttonClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.buttonClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-			this.buttonClear.Location = new System.Drawing.Point(227, 514);
+			this.buttonClear.Location = new System.Drawing.Point(255, 526);
 			this.buttonClear.Name = "buttonClear";
 			this.buttonClear.Size = new System.Drawing.Size(93, 35);
 			this.buttonClear.TabIndex = 8;
@@ -180,8 +181,9 @@ namespace DataSorting
 			// 
 			// buttonGen
 			// 
+			this.buttonGen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.buttonGen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-			this.buttonGen.Location = new System.Drawing.Point(41, 514);
+			this.buttonGen.Location = new System.Drawing.Point(51, 526);
 			this.buttonGen.Name = "buttonGen";
 			this.buttonGen.Size = new System.Drawing.Size(150, 35);
 			this.buttonGen.TabIndex = 7;
@@ -191,6 +193,7 @@ namespace DataSorting
 			// 
 			// textBoxPermutations
 			// 
+			this.textBoxPermutations.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.textBoxPermutations.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
 			this.textBoxPermutations.Location = new System.Drawing.Point(255, 453);
 			this.textBoxPermutations.Name = "textBoxPermutations";
@@ -201,6 +204,7 @@ namespace DataSorting
 			// 
 			// textBoxComparisons
 			// 
+			this.textBoxComparisons.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.textBoxComparisons.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
 			this.textBoxComparisons.Location = new System.Drawing.Point(255, 406);
 			this.textBoxComparisons.Name = "textBoxComparisons";
@@ -211,6 +215,7 @@ namespace DataSorting
 			// 
 			// textBoxTime
 			// 
+			this.textBoxTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.textBoxTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
 			this.textBoxTime.Location = new System.Drawing.Point(255, 358);
 			this.textBoxTime.Name = "textBoxTime";
@@ -317,6 +322,8 @@ namespace DataSorting
 			// 
 			// pictureBoxFx
 			// 
+			this.pictureBoxFx.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
 			this.pictureBoxFx.Enabled = false;
 			this.pictureBoxFx.Location = new System.Drawing.Point(72, 159);
 			this.pictureBoxFx.Name = "pictureBoxFx";
@@ -327,6 +334,7 @@ namespace DataSorting
 			// 
 			// labelCountPermutations
 			// 
+			this.labelCountPermutations.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelCountPermutations.AutoSize = true;
 			this.labelCountPermutations.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F);
 			this.labelCountPermutations.Location = new System.Drawing.Point(17, 456);
@@ -358,6 +366,7 @@ namespace DataSorting
 			// 
 			// labelCountComparisons
 			// 
+			this.labelCountComparisons.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelCountComparisons.AutoSize = true;
 			this.labelCountComparisons.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F);
 			this.labelCountComparisons.Location = new System.Drawing.Point(46, 412);
@@ -389,6 +398,7 @@ namespace DataSorting
 			// 
 			// labelTime
 			// 
+			this.labelTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelTime.AutoSize = true;
 			this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F);
 			this.labelTime.Location = new System.Drawing.Point(187, 361);
@@ -464,7 +474,7 @@ namespace DataSorting
 			this.chart.Cursor = System.Windows.Forms.Cursors.Default;
 			legend1.Name = "Legend1";
 			this.chart.Legends.Add(legend1);
-			this.chart.Location = new System.Drawing.Point(469, 49);
+			this.chart.Location = new System.Drawing.Point(449, 52);
 			this.chart.Name = "chart";
 			series1.ChartArea = "ChartArea1";
 			series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastPoint;
@@ -472,7 +482,7 @@ namespace DataSorting
 			series1.Legend = "Legend1";
 			series1.Name = "Series1";
 			this.chart.Series.Add(series1);
-			this.chart.Size = new System.Drawing.Size(500, 500);
+			this.chart.Size = new System.Drawing.Size(520, 520);
 			this.chart.TabIndex = 233;
 			this.chart.TabStop = false;
 			// 
@@ -480,7 +490,7 @@ namespace DataSorting
 			// 
 			this.buttonClear2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.buttonClear2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-			this.buttonClear2.Location = new System.Drawing.Point(238, 522);
+			this.buttonClear2.Location = new System.Drawing.Point(241, 545);
 			this.buttonClear2.Name = "buttonClear2";
 			this.buttonClear2.Size = new System.Drawing.Size(88, 27);
 			this.buttonClear2.TabIndex = 3;
@@ -492,7 +502,7 @@ namespace DataSorting
 			// 
 			this.buttonCalc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.buttonCalc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-			this.buttonCalc.Location = new System.Drawing.Point(78, 522);
+			this.buttonCalc.Location = new System.Drawing.Point(82, 545);
 			this.buttonCalc.Name = "buttonCalc";
 			this.buttonCalc.Size = new System.Drawing.Size(88, 27);
 			this.buttonCalc.TabIndex = 2;
@@ -505,7 +515,7 @@ namespace DataSorting
 			this.comboBoxRecords.BackColor = System.Drawing.Color.White;
 			this.comboBoxRecords.FlatStyle = System.Windows.Forms.FlatStyle.System;
 			this.comboBoxRecords.FormattingEnabled = true;
-			this.comboBoxRecords.Location = new System.Drawing.Point(76, 6);
+			this.comboBoxRecords.Location = new System.Drawing.Point(76, 14);
 			this.comboBoxRecords.Name = "comboBoxRecords";
 			this.comboBoxRecords.Size = new System.Drawing.Size(253, 28);
 			this.comboBoxRecords.TabIndex = 0;
@@ -524,7 +534,7 @@ namespace DataSorting
 			this.listViewSourceData.HideSelection = false;
 			this.listViewSourceData.Location = new System.Drawing.Point(25, 123);
 			this.listViewSourceData.Name = "listViewSourceData";
-			this.listViewSourceData.Size = new System.Drawing.Size(371, 95);
+			this.listViewSourceData.Size = new System.Drawing.Size(371, 111);
 			this.listViewSourceData.TabIndex = 232;
 			this.listViewSourceData.TabStop = false;
 			this.listViewSourceData.UseCompatibleStateImageBehavior = false;
@@ -559,7 +569,7 @@ namespace DataSorting
 			// 
 			this.labelConEq.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelConEq.AutoSize = true;
-			this.labelConEq.Location = new System.Drawing.Point(7, 376);
+			this.labelConEq.Location = new System.Drawing.Point(7, 392);
 			this.labelConEq.Name = "labelConEq";
 			this.labelConEq.Size = new System.Drawing.Size(142, 20);
 			this.labelConEq.TabIndex = 22;
@@ -568,7 +578,7 @@ namespace DataSorting
 			// textBoxBetaCoef
 			// 
 			this.textBoxBetaCoef.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBoxBetaCoef.Location = new System.Drawing.Point(293, 496);
+			this.textBoxBetaCoef.Location = new System.Drawing.Point(293, 512);
 			this.textBoxBetaCoef.Name = "textBoxBetaCoef";
 			this.textBoxBetaCoef.ReadOnly = true;
 			this.textBoxBetaCoef.Size = new System.Drawing.Size(86, 26);
@@ -578,7 +588,7 @@ namespace DataSorting
 			// textBoxConEq
 			// 
 			this.textBoxConEq.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBoxConEq.Location = new System.Drawing.Point(155, 373);
+			this.textBoxConEq.Location = new System.Drawing.Point(155, 389);
 			this.textBoxConEq.Name = "textBoxConEq";
 			this.textBoxConEq.ReadOnly = true;
 			this.textBoxConEq.Size = new System.Drawing.Size(253, 26);
@@ -588,7 +598,7 @@ namespace DataSorting
 			// textBoxCoefCor
 			// 
 			this.textBoxCoefCor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBoxCoefCor.Location = new System.Drawing.Point(293, 409);
+			this.textBoxCoefCor.Location = new System.Drawing.Point(293, 425);
 			this.textBoxCoefCor.Name = "textBoxCoefCor";
 			this.textBoxCoefCor.ReadOnly = true;
 			this.textBoxCoefCor.Size = new System.Drawing.Size(86, 26);
@@ -598,7 +608,7 @@ namespace DataSorting
 			// textBoxSecondLine
 			// 
 			this.textBoxSecondLine.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBoxSecondLine.Location = new System.Drawing.Point(76, 272);
+			this.textBoxSecondLine.Location = new System.Drawing.Point(76, 288);
 			this.textBoxSecondLine.Name = "textBoxSecondLine";
 			this.textBoxSecondLine.ReadOnly = true;
 			this.textBoxSecondLine.Size = new System.Drawing.Size(253, 26);
@@ -608,7 +618,7 @@ namespace DataSorting
 			// textBoxFirstLine
 			// 
 			this.textBoxFirstLine.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBoxFirstLine.Location = new System.Drawing.Point(76, 244);
+			this.textBoxFirstLine.Location = new System.Drawing.Point(76, 260);
 			this.textBoxFirstLine.Name = "textBoxFirstLine";
 			this.textBoxFirstLine.ReadOnly = true;
 			this.textBoxFirstLine.Size = new System.Drawing.Size(253, 26);
@@ -618,7 +628,7 @@ namespace DataSorting
 			// textBox10
 			// 
 			this.textBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBox10.Location = new System.Drawing.Point(244, 333);
+			this.textBox10.Location = new System.Drawing.Point(244, 349);
 			this.textBox10.Name = "textBox10";
 			this.textBox10.ReadOnly = true;
 			this.textBox10.Size = new System.Drawing.Size(102, 26);
@@ -628,7 +638,7 @@ namespace DataSorting
 			// textBoxCoefDeterm
 			// 
 			this.textBoxCoefDeterm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBoxCoefDeterm.Location = new System.Drawing.Point(293, 436);
+			this.textBoxCoefDeterm.Location = new System.Drawing.Point(293, 452);
 			this.textBoxCoefDeterm.Name = "textBoxCoefDeterm";
 			this.textBoxCoefDeterm.ReadOnly = true;
 			this.textBoxCoefDeterm.Size = new System.Drawing.Size(86, 26);
@@ -638,7 +648,7 @@ namespace DataSorting
 			// textBoxCoefEl
 			// 
 			this.textBoxCoefEl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBoxCoefEl.Location = new System.Drawing.Point(293, 464);
+			this.textBoxCoefEl.Location = new System.Drawing.Point(293, 480);
 			this.textBoxCoefEl.Name = "textBoxCoefEl";
 			this.textBoxCoefEl.ReadOnly = true;
 			this.textBoxCoefEl.Size = new System.Drawing.Size(86, 26);
@@ -648,7 +658,7 @@ namespace DataSorting
 			// textBoxA0
 			// 
 			this.textBoxA0.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBoxA0.Location = new System.Drawing.Point(106, 333);
+			this.textBoxA0.Location = new System.Drawing.Point(106, 349);
 			this.textBoxA0.Name = "textBoxA0";
 			this.textBoxA0.ReadOnly = true;
 			this.textBoxA0.Size = new System.Drawing.Size(99, 26);
@@ -657,7 +667,7 @@ namespace DataSorting
 			// 
 			// textBoxM
 			// 
-			this.textBoxM.Location = new System.Drawing.Point(238, 49);
+			this.textBoxM.Location = new System.Drawing.Point(241, 62);
 			this.textBoxM.Name = "textBoxM";
 			this.textBoxM.Size = new System.Drawing.Size(86, 26);
 			this.textBoxM.TabIndex = 1;
@@ -666,7 +676,7 @@ namespace DataSorting
 			// 
 			this.labelBetaCoef.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelBetaCoef.AutoSize = true;
-			this.labelBetaCoef.Location = new System.Drawing.Point(127, 499);
+			this.labelBetaCoef.Location = new System.Drawing.Point(127, 515);
 			this.labelBetaCoef.Name = "labelBetaCoef";
 			this.labelBetaCoef.Size = new System.Drawing.Size(169, 20);
 			this.labelBetaCoef.TabIndex = 11;
@@ -676,7 +686,7 @@ namespace DataSorting
 			// 
 			this.labelCoefDeterm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelCoefDeterm.AutoSize = true;
-			this.labelCoefDeterm.Location = new System.Drawing.Point(50, 441);
+			this.labelCoefDeterm.Location = new System.Drawing.Point(50, 457);
 			this.labelCoefDeterm.Name = "labelCoefDeterm";
 			this.labelCoefDeterm.Size = new System.Drawing.Size(246, 20);
 			this.labelCoefDeterm.TabIndex = 9;
@@ -686,7 +696,7 @@ namespace DataSorting
 			// 
 			this.labelCoefCor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelCoefCor.AutoSize = true;
-			this.labelCoefCor.Location = new System.Drawing.Point(72, 413);
+			this.labelCoefCor.Location = new System.Drawing.Point(72, 429);
 			this.labelCoefCor.Name = "labelCoefCor";
 			this.labelCoefCor.Size = new System.Drawing.Size(224, 20);
 			this.labelCoefCor.TabIndex = 8;
@@ -696,7 +706,7 @@ namespace DataSorting
 			// 
 			this.labelA0.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelA0.AutoSize = true;
-			this.labelA0.Location = new System.Drawing.Point(73, 336);
+			this.labelA0.Location = new System.Drawing.Point(73, 352);
 			this.labelA0.Name = "labelA0";
 			this.labelA0.Size = new System.Drawing.Size(36, 20);
 			this.labelA0.TabIndex = 7;
@@ -706,7 +716,7 @@ namespace DataSorting
 			// 
 			this.labelA1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelA1.AutoSize = true;
-			this.labelA1.Location = new System.Drawing.Point(211, 336);
+			this.labelA1.Location = new System.Drawing.Point(211, 352);
 			this.labelA1.Name = "labelA1";
 			this.labelA1.Size = new System.Drawing.Size(36, 20);
 			this.labelA1.TabIndex = 6;
@@ -716,7 +726,7 @@ namespace DataSorting
 			// 
 			this.labelCoef.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelCoef.AutoSize = true;
-			this.labelCoef.Location = new System.Drawing.Point(74, 310);
+			this.labelCoef.Location = new System.Drawing.Point(74, 326);
 			this.labelCoef.Name = "labelCoef";
 			this.labelCoef.Size = new System.Drawing.Size(262, 20);
 			this.labelCoef.TabIndex = 5;
@@ -726,7 +736,7 @@ namespace DataSorting
 			// 
 			this.labelCoefEl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelCoefEl.AutoSize = true;
-			this.labelCoefEl.Location = new System.Drawing.Point(55, 471);
+			this.labelCoefEl.Location = new System.Drawing.Point(55, 487);
 			this.labelCoefEl.Name = "labelCoefEl";
 			this.labelCoefEl.Size = new System.Drawing.Size(241, 20);
 			this.labelCoefEl.TabIndex = 4;
@@ -736,7 +746,7 @@ namespace DataSorting
 			// 
 			this.labelSysEq.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelSysEq.AutoSize = true;
-			this.labelSysEq.Location = new System.Drawing.Point(74, 221);
+			this.labelSysEq.Location = new System.Drawing.Point(74, 237);
 			this.labelSysEq.Name = "labelSysEq";
 			this.labelSysEq.Size = new System.Drawing.Size(255, 20);
 			this.labelSysEq.TabIndex = 3;
@@ -764,11 +774,12 @@ namespace DataSorting
 			// labelM
 			// 
 			this.labelM.AutoSize = true;
-			this.labelM.Location = new System.Drawing.Point(78, 52);
+			this.labelM.Location = new System.Drawing.Point(81, 65);
 			this.labelM.Name = "labelM";
 			this.labelM.Size = new System.Drawing.Size(161, 20);
 			this.labelM.TabIndex = 0;
 			this.labelM.Text = "Объем выборки(M)=";
+			this.labelM.Click += new System.EventHandler(this.labelM_Click);
 			// 
 			// ToolStripMenuUser
 			// 
@@ -817,18 +828,18 @@ namespace DataSorting
 			// 
 			// toolStripComboBoxPDL
 			// 
+			this.toolStripComboBoxPDL.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.toolStripComboBoxPDL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.toolStripComboBoxPDL.Name = "toolStripComboBoxPDL";
 			this.toolStripComboBoxPDL.Size = new System.Drawing.Size(121, 28);
-			this.toolStripComboBoxPDL.Text = "ВЗР";
 			this.toolStripComboBoxPDL.SelectedIndexChanged += new System.EventHandler(this.toolStripComboBoxPDL_SelectedIndexChanged);
 			// 
 			// toolStripComboBoxSort
 			// 
+			this.toolStripComboBoxSort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.toolStripComboBoxSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.toolStripComboBoxSort.Name = "toolStripComboBoxSort";
 			this.toolStripComboBoxSort.Size = new System.Drawing.Size(121, 28);
-			this.toolStripComboBoxSort.Text = "Сортировка";
 			// 
 			// toolStripMenuItemUser
 			// 

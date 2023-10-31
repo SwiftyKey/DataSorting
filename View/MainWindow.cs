@@ -24,7 +24,9 @@ namespace DataSorting
 		{
 			InitializeComponent();
 			this.toolStripComboBoxPDL.Items.Add("Fisk");
+			this.toolStripComboBoxPDL.SelectedIndex = 0;
 			this.toolStripComboBoxSort.Items.Add("MergeSort");
+			this.toolStripComboBoxSort.SelectedIndex = 0;
 		}
 
 		private void FillListView(ListView lv, float[] arr)
@@ -44,8 +46,7 @@ namespace DataSorting
 
 		private void ButtonGenEnabled()
 		{
-			buttonGen.Enabled = (textBoxA.Text != "" && textBoxB.Text != "" && textBoxC.Text != "" 
-			&& toolStripComboBoxPDL.SelectedIndex != -1 && toolStripComboBoxSort.SelectedIndex != -1);
+			buttonGen.Enabled = (textBoxA.Text != "" && textBoxB.Text != "" && textBoxC.Text != "");
 		}
 
 		private Object GetModel(string path, string name) {
@@ -117,6 +118,11 @@ namespace DataSorting
 			Type rt = typeof(DataSorting.Properties.Resources);
 			PropertyInfo fp = rt.GetProperty(toolStripComboBoxPDL.Text, typeof(Bitmap));
 			pictureBoxFx.Image = (Bitmap)fp.GetValue(new DataSorting.Properties.Resources());
+		}
+
+		private void labelM_Click(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
