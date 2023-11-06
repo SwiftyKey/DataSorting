@@ -31,10 +31,10 @@ namespace DataSorting
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-			System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-			System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-			System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+			System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+			System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+			System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
 			this.tabControlSorting = new System.Windows.Forms.TabControl();
 			this.tabPageSorting = new System.Windows.Forms.TabPage();
 			this.textBoxC = new System.Windows.Forms.TextBox();
@@ -134,15 +134,16 @@ namespace DataSorting
 			this.tabControlSorting.Controls.Add(this.tabPageSorting);
 			this.tabControlSorting.Controls.Add(this.tabPageConEq);
 			this.tabControlSorting.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-			this.tabControlSorting.Location = new System.Drawing.Point(2, 23);
+			this.tabControlSorting.Location = new System.Drawing.Point(2, 29);
 			this.tabControlSorting.Name = "tabControlSorting";
 			this.tabControlSorting.SelectedIndex = 0;
-			this.tabControlSorting.Size = new System.Drawing.Size(985, 617);
+			this.tabControlSorting.Size = new System.Drawing.Size(985, 611);
 			this.tabControlSorting.TabIndex = 1;
 			// 
 			// tabPageSorting
 			// 
-			this.tabPageSorting.BackColor = System.Drawing.Color.Transparent;
+			this.tabPageSorting.BackColor = System.Drawing.Color.DarkGray;
+			this.tabPageSorting.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.tabPageSorting.Controls.Add(this.textBoxC);
 			this.tabPageSorting.Controls.Add(this.buttonClear);
 			this.tabPageSorting.Controls.Add(this.buttonGen);
@@ -167,12 +168,14 @@ namespace DataSorting
 			this.tabPageSorting.Location = new System.Drawing.Point(4, 29);
 			this.tabPageSorting.Name = "tabPageSorting";
 			this.tabPageSorting.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPageSorting.Size = new System.Drawing.Size(977, 584);
+			this.tabPageSorting.Size = new System.Drawing.Size(977, 578);
 			this.tabPageSorting.TabIndex = 0;
 			this.tabPageSorting.Text = "Упорядочивание данных";
 			// 
 			// textBoxC
 			// 
+			this.textBoxC.BackColor = System.Drawing.Color.Silver;
+			this.textBoxC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.textBoxC.Location = new System.Drawing.Point(156, 113);
 			this.textBoxC.Name = "textBoxC";
 			this.textBoxC.Size = new System.Drawing.Size(103, 26);
@@ -183,32 +186,38 @@ namespace DataSorting
 			// buttonClear
 			// 
 			this.buttonClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.buttonClear.BackColor = System.Drawing.Color.Silver;
+			this.buttonClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.buttonClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-			this.buttonClear.Location = new System.Drawing.Point(255, 526);
+			this.buttonClear.Location = new System.Drawing.Point(255, 518);
 			this.buttonClear.Name = "buttonClear";
 			this.buttonClear.Size = new System.Drawing.Size(93, 35);
 			this.buttonClear.TabIndex = 8;
 			this.buttonClear.Text = "Очистка";
-			this.buttonClear.UseVisualStyleBackColor = true;
+			this.buttonClear.UseVisualStyleBackColor = false;
 			this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
 			// 
 			// buttonGen
 			// 
 			this.buttonGen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.buttonGen.BackColor = System.Drawing.Color.DarkGray;
+			this.buttonGen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.buttonGen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-			this.buttonGen.Location = new System.Drawing.Point(51, 526);
+			this.buttonGen.Location = new System.Drawing.Point(51, 518);
 			this.buttonGen.Name = "buttonGen";
 			this.buttonGen.Size = new System.Drawing.Size(150, 35);
 			this.buttonGen.TabIndex = 7;
 			this.buttonGen.Text = "Сгенерировать";
-			this.buttonGen.UseVisualStyleBackColor = true;
+			this.buttonGen.UseVisualStyleBackColor = false;
 			this.buttonGen.Click += new System.EventHandler(this.buttonGen_Click);
 			// 
 			// textBoxPermutations
 			// 
 			this.textBoxPermutations.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.textBoxPermutations.BackColor = System.Drawing.Color.Silver;
+			this.textBoxPermutations.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.textBoxPermutations.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-			this.textBoxPermutations.Location = new System.Drawing.Point(255, 453);
+			this.textBoxPermutations.Location = new System.Drawing.Point(255, 445);
 			this.textBoxPermutations.Name = "textBoxPermutations";
 			this.textBoxPermutations.ReadOnly = true;
 			this.textBoxPermutations.Size = new System.Drawing.Size(118, 26);
@@ -218,8 +227,10 @@ namespace DataSorting
 			// textBoxComparisons
 			// 
 			this.textBoxComparisons.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.textBoxComparisons.BackColor = System.Drawing.Color.Silver;
+			this.textBoxComparisons.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.textBoxComparisons.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-			this.textBoxComparisons.Location = new System.Drawing.Point(255, 406);
+			this.textBoxComparisons.Location = new System.Drawing.Point(255, 398);
 			this.textBoxComparisons.Name = "textBoxComparisons";
 			this.textBoxComparisons.ReadOnly = true;
 			this.textBoxComparisons.Size = new System.Drawing.Size(118, 26);
@@ -229,8 +240,10 @@ namespace DataSorting
 			// textBoxTime
 			// 
 			this.textBoxTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.textBoxTime.BackColor = System.Drawing.Color.Silver;
+			this.textBoxTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.textBoxTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-			this.textBoxTime.Location = new System.Drawing.Point(255, 358);
+			this.textBoxTime.Location = new System.Drawing.Point(255, 350);
 			this.textBoxTime.Name = "textBoxTime";
 			this.textBoxTime.ReadOnly = true;
 			this.textBoxTime.Size = new System.Drawing.Size(118, 26);
@@ -239,6 +252,8 @@ namespace DataSorting
 			// 
 			// textBoxB
 			// 
+			this.textBoxB.BackColor = System.Drawing.Color.Silver;
+			this.textBoxB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.textBoxB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
 			this.textBoxB.Location = new System.Drawing.Point(156, 78);
 			this.textBoxB.Name = "textBoxB";
@@ -249,6 +264,8 @@ namespace DataSorting
 			// 
 			// textBoxA
 			// 
+			this.textBoxA.BackColor = System.Drawing.Color.Silver;
+			this.textBoxA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.textBoxA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
 			this.textBoxA.Location = new System.Drawing.Point(156, 47);
 			this.textBoxA.Name = "textBoxA";
@@ -259,6 +276,8 @@ namespace DataSorting
 			// 
 			// numericUpDownN
 			// 
+			this.numericUpDownN.BackColor = System.Drawing.Color.Silver;
+			this.numericUpDownN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.numericUpDownN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
 			this.numericUpDownN.Location = new System.Drawing.Point(156, 16);
 			this.numericUpDownN.Maximum = new decimal(new int[] {
@@ -284,14 +303,16 @@ namespace DataSorting
 			// 
 			this.listViewSortedArr.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+			this.listViewSortedArr.BackColor = System.Drawing.Color.LightGray;
 			this.listViewSortedArr.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeaderSAId,
             this.columnHeaderSAValue});
 			this.listViewSortedArr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+			this.listViewSortedArr.GridLines = true;
 			this.listViewSortedArr.HideSelection = false;
-			this.listViewSortedArr.Location = new System.Drawing.Point(689, 43);
+			this.listViewSortedArr.Location = new System.Drawing.Point(687, 43);
 			this.listViewSortedArr.Name = "listViewSortedArr";
-			this.listViewSortedArr.Size = new System.Drawing.Size(268, 515);
+			this.listViewSortedArr.Size = new System.Drawing.Size(268, 507);
 			this.listViewSortedArr.TabIndex = 7;
 			this.listViewSortedArr.TabStop = false;
 			this.listViewSortedArr.UseCompatibleStateImageBehavior = false;
@@ -310,14 +331,16 @@ namespace DataSorting
 			// listViewSourceArr
 			// 
 			this.listViewSourceArr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+			this.listViewSourceArr.BackColor = System.Drawing.Color.LightGray;
 			this.listViewSourceArr.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeaderSrcId,
             this.columnHeaderSrcValue});
 			this.listViewSourceArr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+			this.listViewSourceArr.GridLines = true;
 			this.listViewSourceArr.HideSelection = false;
-			this.listViewSourceArr.Location = new System.Drawing.Point(399, 46);
+			this.listViewSourceArr.Location = new System.Drawing.Point(398, 46);
 			this.listViewSourceArr.Name = "listViewSourceArr";
-			this.listViewSourceArr.Size = new System.Drawing.Size(268, 515);
+			this.listViewSourceArr.Size = new System.Drawing.Size(268, 507);
 			this.listViewSourceArr.TabIndex = 6;
 			this.listViewSourceArr.TabStop = false;
 			this.listViewSourceArr.UseCompatibleStateImageBehavior = false;
@@ -340,7 +363,7 @@ namespace DataSorting
 			this.pictureBoxFx.Enabled = false;
 			this.pictureBoxFx.Location = new System.Drawing.Point(72, 159);
 			this.pictureBoxFx.Name = "pictureBoxFx";
-			this.pictureBoxFx.Size = new System.Drawing.Size(258, 183);
+			this.pictureBoxFx.Size = new System.Drawing.Size(258, 175);
 			this.pictureBoxFx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBoxFx.TabIndex = 39;
 			this.pictureBoxFx.TabStop = false;
@@ -350,7 +373,7 @@ namespace DataSorting
 			this.labelCountPermutations.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelCountPermutations.AutoSize = true;
 			this.labelCountPermutations.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F);
-			this.labelCountPermutations.Location = new System.Drawing.Point(17, 456);
+			this.labelCountPermutations.Location = new System.Drawing.Point(17, 448);
 			this.labelCountPermutations.Name = "labelCountPermutations";
 			this.labelCountPermutations.Size = new System.Drawing.Size(242, 20);
 			this.labelCountPermutations.TabIndex = 37;
@@ -371,7 +394,7 @@ namespace DataSorting
 			this.labelSourceArr.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.labelSourceArr.AutoSize = true;
 			this.labelSourceArr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F);
-			this.labelSourceArr.Location = new System.Drawing.Point(451, 18);
+			this.labelSourceArr.Location = new System.Drawing.Point(450, 18);
 			this.labelSourceArr.Name = "labelSourceArr";
 			this.labelSourceArr.Size = new System.Drawing.Size(156, 20);
 			this.labelSourceArr.TabIndex = 35;
@@ -382,7 +405,7 @@ namespace DataSorting
 			this.labelCountComparisons.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelCountComparisons.AutoSize = true;
 			this.labelCountComparisons.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F);
-			this.labelCountComparisons.Location = new System.Drawing.Point(46, 412);
+			this.labelCountComparisons.Location = new System.Drawing.Point(46, 404);
 			this.labelCountComparisons.Name = "labelCountComparisons";
 			this.labelCountComparisons.Size = new System.Drawing.Size(213, 20);
 			this.labelCountComparisons.TabIndex = 33;
@@ -393,7 +416,7 @@ namespace DataSorting
 			this.labelSortedArr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.labelSortedArr.AutoSize = true;
 			this.labelSortedArr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F);
-			this.labelSortedArr.Location = new System.Drawing.Point(717, 18);
+			this.labelSortedArr.Location = new System.Drawing.Point(715, 18);
 			this.labelSortedArr.Name = "labelSortedArr";
 			this.labelSortedArr.Size = new System.Drawing.Size(209, 20);
 			this.labelSortedArr.TabIndex = 31;
@@ -414,7 +437,7 @@ namespace DataSorting
 			this.labelTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelTime.AutoSize = true;
 			this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F);
-			this.labelTime.Location = new System.Drawing.Point(187, 361);
+			this.labelTime.Location = new System.Drawing.Point(187, 353);
 			this.labelTime.Name = "labelTime";
 			this.labelTime.Size = new System.Drawing.Size(73, 20);
 			this.labelTime.TabIndex = 29;
@@ -442,7 +465,7 @@ namespace DataSorting
 			// 
 			// tabPageConEq
 			// 
-			this.tabPageConEq.BackColor = System.Drawing.Color.Transparent;
+			this.tabPageConEq.BackColor = System.Drawing.Color.DarkGray;
 			this.tabPageConEq.Controls.Add(this.textBox8);
 			this.tabPageConEq.Controls.Add(this.textBox7);
 			this.tabPageConEq.Controls.Add(this.label7);
@@ -485,14 +508,16 @@ namespace DataSorting
 			this.tabPageConEq.Location = new System.Drawing.Point(4, 29);
 			this.tabPageConEq.Name = "tabPageConEq";
 			this.tabPageConEq.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPageConEq.Size = new System.Drawing.Size(977, 584);
+			this.tabPageConEq.Size = new System.Drawing.Size(977, 578);
 			this.tabPageConEq.TabIndex = 1;
 			this.tabPageConEq.Text = "Уравнение связи";
 			// 
 			// textBox8
 			// 
 			this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBox8.Location = new System.Drawing.Point(241, 387);
+			this.textBox8.BackColor = System.Drawing.Color.Silver;
+			this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.textBox8.Location = new System.Drawing.Point(241, 381);
 			this.textBox8.Name = "textBox8";
 			this.textBox8.ReadOnly = true;
 			this.textBox8.Size = new System.Drawing.Size(135, 26);
@@ -501,7 +526,9 @@ namespace DataSorting
 			// textBox7
 			// 
 			this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBox7.Location = new System.Drawing.Point(76, 387);
+			this.textBox7.BackColor = System.Drawing.Color.Silver;
+			this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.textBox7.Location = new System.Drawing.Point(76, 381);
 			this.textBox7.Name = "textBox7";
 			this.textBox7.ReadOnly = true;
 			this.textBox7.Size = new System.Drawing.Size(135, 26);
@@ -511,7 +538,7 @@ namespace DataSorting
 			// 
 			this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.label7.AutoSize = true;
-			this.label7.Location = new System.Drawing.Point(380, 390);
+			this.label7.Location = new System.Drawing.Point(380, 384);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(16, 20);
 			this.label7.TabIndex = 246;
@@ -521,7 +548,7 @@ namespace DataSorting
 			// 
 			this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(217, 390);
+			this.label6.Location = new System.Drawing.Point(217, 384);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(18, 20);
 			this.label6.TabIndex = 245;
@@ -531,7 +558,7 @@ namespace DataSorting
 			// 
 			this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(41, 390);
+			this.label5.Location = new System.Drawing.Point(41, 384);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(29, 20);
 			this.label5.TabIndex = 244;
@@ -541,7 +568,7 @@ namespace DataSorting
 			// 
 			this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(269, 289);
+			this.label4.Location = new System.Drawing.Point(269, 283);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(40, 20);
 			this.label4.TabIndex = 243;
@@ -551,7 +578,7 @@ namespace DataSorting
 			// 
 			this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(269, 254);
+			this.label3.Location = new System.Drawing.Point(269, 248);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(40, 20);
 			this.label3.TabIndex = 242;
@@ -561,7 +588,7 @@ namespace DataSorting
 			// 
 			this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(117, 286);
+			this.label2.Location = new System.Drawing.Point(117, 280);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(40, 20);
 			this.label2.TabIndex = 241;
@@ -571,7 +598,7 @@ namespace DataSorting
 			// 
 			this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(117, 254);
+			this.label1.Location = new System.Drawing.Point(117, 248);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(40, 20);
 			this.label1.TabIndex = 240;
@@ -580,7 +607,9 @@ namespace DataSorting
 			// textBox6
 			// 
 			this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBox6.Location = new System.Drawing.Point(315, 283);
+			this.textBox6.BackColor = System.Drawing.Color.Silver;
+			this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.textBox6.Location = new System.Drawing.Point(315, 277);
 			this.textBox6.Name = "textBox6";
 			this.textBox6.ReadOnly = true;
 			this.textBox6.Size = new System.Drawing.Size(100, 26);
@@ -589,7 +618,9 @@ namespace DataSorting
 			// textBox5
 			// 
 			this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBox5.Location = new System.Drawing.Point(163, 283);
+			this.textBox5.BackColor = System.Drawing.Color.Silver;
+			this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.textBox5.Location = new System.Drawing.Point(163, 277);
 			this.textBox5.Name = "textBox5";
 			this.textBox5.ReadOnly = true;
 			this.textBox5.Size = new System.Drawing.Size(100, 26);
@@ -598,7 +629,9 @@ namespace DataSorting
 			// textBox4
 			// 
 			this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBox4.Location = new System.Drawing.Point(11, 283);
+			this.textBox4.BackColor = System.Drawing.Color.Silver;
+			this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.textBox4.Location = new System.Drawing.Point(11, 277);
 			this.textBox4.Name = "textBox4";
 			this.textBox4.ReadOnly = true;
 			this.textBox4.Size = new System.Drawing.Size(100, 26);
@@ -607,7 +640,9 @@ namespace DataSorting
 			// textBox3
 			// 
 			this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBox3.Location = new System.Drawing.Point(315, 251);
+			this.textBox3.BackColor = System.Drawing.Color.Silver;
+			this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.textBox3.Location = new System.Drawing.Point(315, 245);
 			this.textBox3.Name = "textBox3";
 			this.textBox3.ReadOnly = true;
 			this.textBox3.Size = new System.Drawing.Size(100, 26);
@@ -616,7 +651,9 @@ namespace DataSorting
 			// textBox2
 			// 
 			this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBox2.Location = new System.Drawing.Point(163, 251);
+			this.textBox2.BackColor = System.Drawing.Color.Silver;
+			this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.textBox2.Location = new System.Drawing.Point(163, 245);
 			this.textBox2.Name = "textBox2";
 			this.textBox2.ReadOnly = true;
 			this.textBox2.Size = new System.Drawing.Size(100, 26);
@@ -625,7 +662,9 @@ namespace DataSorting
 			// textBox1
 			// 
 			this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBox1.Location = new System.Drawing.Point(11, 251);
+			this.textBox1.BackColor = System.Drawing.Color.Silver;
+			this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.textBox1.Location = new System.Drawing.Point(11, 245);
 			this.textBox1.Name = "textBox1";
 			this.textBox1.ReadOnly = true;
 			this.textBox1.Size = new System.Drawing.Size(100, 26);
@@ -636,79 +675,89 @@ namespace DataSorting
 			this.chart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			chartArea1.Name = "ChartArea1";
-			this.chart.ChartAreas.Add(chartArea1);
-			this.chart.Cursor = System.Windows.Forms.Cursors.Default;
-			legend1.Name = "Legend1";
-			this.chart.Legends.Add(legend1);
+			this.chart.BackColor = System.Drawing.Color.LightGray;
+			this.chart.BorderlineColor = System.Drawing.Color.DarkGray;
+			chartArea6.Name = "ChartArea1";
+			this.chart.ChartAreas.Add(chartArea6);
+			this.chart.Cursor = System.Windows.Forms.Cursors.Cross;
+			legend6.BackColor = System.Drawing.Color.Silver;
+			legend6.Name = "Legend1";
+			this.chart.Legends.Add(legend6);
 			this.chart.Location = new System.Drawing.Point(449, 52);
 			this.chart.Name = "chart";
-			series1.ChartArea = "ChartArea1";
-			series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastPoint;
-			series1.IsVisibleInLegend = false;
-			series1.Legend = "Legend1";
-			series1.Name = "Series1";
-			series2.ChartArea = "ChartArea1";
-			series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastPoint;
-			series2.IsVisibleInLegend = false;
-			series2.Legend = "Legend1";
-			series2.Name = "Series2";
-			this.chart.Series.Add(series1);
-			this.chart.Series.Add(series2);
-			this.chart.Size = new System.Drawing.Size(520, 520);
+			series11.ChartArea = "ChartArea1";
+			series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastPoint;
+			series11.IsVisibleInLegend = false;
+			series11.Legend = "Legend1";
+			series11.Name = "Series1";
+			series12.ChartArea = "ChartArea1";
+			series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastPoint;
+			series12.IsVisibleInLegend = false;
+			series12.Legend = "Legend1";
+			series12.Name = "Series2";
+			this.chart.Series.Add(series11);
+			this.chart.Series.Add(series12);
+			this.chart.Size = new System.Drawing.Size(520, 514);
 			this.chart.TabIndex = 233;
 			this.chart.TabStop = false;
 			// 
 			// buttonClear2
 			// 
 			this.buttonClear2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.buttonClear2.BackColor = System.Drawing.Color.Silver;
+			this.buttonClear2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.buttonClear2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-			this.buttonClear2.Location = new System.Drawing.Point(241, 545);
+			this.buttonClear2.Location = new System.Drawing.Point(251, 538);
 			this.buttonClear2.Name = "buttonClear2";
-			this.buttonClear2.Size = new System.Drawing.Size(88, 27);
+			this.buttonClear2.Size = new System.Drawing.Size(95, 27);
 			this.buttonClear2.TabIndex = 3;
 			this.buttonClear2.Text = "Очистка";
-			this.buttonClear2.UseVisualStyleBackColor = true;
+			this.buttonClear2.UseVisualStyleBackColor = false;
 			this.buttonClear2.Click += new System.EventHandler(this.buttonClear2_Click);
 			// 
 			// buttonCalc
 			// 
 			this.buttonCalc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.buttonCalc.BackColor = System.Drawing.Color.DarkGray;
 			this.buttonCalc.Enabled = false;
+			this.buttonCalc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.buttonCalc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-			this.buttonCalc.Location = new System.Drawing.Point(82, 545);
+			this.buttonCalc.Location = new System.Drawing.Point(82, 539);
 			this.buttonCalc.Name = "buttonCalc";
 			this.buttonCalc.Size = new System.Drawing.Size(88, 27);
 			this.buttonCalc.TabIndex = 2;
 			this.buttonCalc.Text = "Расчет";
-			this.buttonCalc.UseVisualStyleBackColor = true;
+			this.buttonCalc.UseVisualStyleBackColor = false;
 			this.buttonCalc.Click += new System.EventHandler(this.buttonCalc_Click);
 			// 
 			// comboBoxRecords
 			// 
-			this.comboBoxRecords.BackColor = System.Drawing.Color.White;
-			this.comboBoxRecords.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.comboBoxRecords.BackColor = System.Drawing.Color.Silver;
+			this.comboBoxRecords.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboBoxRecords.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.comboBoxRecords.FormattingEnabled = true;
 			this.comboBoxRecords.Location = new System.Drawing.Point(76, 14);
 			this.comboBoxRecords.Name = "comboBoxRecords";
 			this.comboBoxRecords.Size = new System.Drawing.Size(253, 28);
 			this.comboBoxRecords.TabIndex = 0;
-			this.comboBoxRecords.Text = "История";
 			// 
 			// listViewSourceData
 			// 
 			this.listViewSourceData.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+			this.listViewSourceData.BackColor = System.Drawing.Color.LightGray;
+			this.listViewSourceData.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.listViewSourceData.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeaderId,
             this.columnHeaderTimeY,
             this.columnHeaderSizeX,
             this.columnHeaderXX,
             this.columnHeaderXY});
+			this.listViewSourceData.GridLines = true;
 			this.listViewSourceData.HideSelection = false;
 			this.listViewSourceData.Location = new System.Drawing.Point(25, 114);
 			this.listViewSourceData.Name = "listViewSourceData";
-			this.listViewSourceData.Size = new System.Drawing.Size(371, 111);
+			this.listViewSourceData.Size = new System.Drawing.Size(371, 105);
 			this.listViewSourceData.TabIndex = 232;
 			this.listViewSourceData.TabStop = false;
 			this.listViewSourceData.UseCompatibleStateImageBehavior = false;
@@ -743,7 +792,7 @@ namespace DataSorting
 			// 
 			this.labelConEq.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelConEq.AutoSize = true;
-			this.labelConEq.Location = new System.Drawing.Point(143, 364);
+			this.labelConEq.Location = new System.Drawing.Point(143, 358);
 			this.labelConEq.Name = "labelConEq";
 			this.labelConEq.Size = new System.Drawing.Size(142, 20);
 			this.labelConEq.TabIndex = 22;
@@ -752,7 +801,9 @@ namespace DataSorting
 			// textBoxBetaCoef
 			// 
 			this.textBoxBetaCoef.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBoxBetaCoef.Location = new System.Drawing.Point(293, 512);
+			this.textBoxBetaCoef.BackColor = System.Drawing.Color.Silver;
+			this.textBoxBetaCoef.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.textBoxBetaCoef.Location = new System.Drawing.Point(293, 506);
 			this.textBoxBetaCoef.Name = "textBoxBetaCoef";
 			this.textBoxBetaCoef.ReadOnly = true;
 			this.textBoxBetaCoef.Size = new System.Drawing.Size(86, 26);
@@ -762,7 +813,9 @@ namespace DataSorting
 			// textBoxCoefCor
 			// 
 			this.textBoxCoefCor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBoxCoefCor.Location = new System.Drawing.Point(293, 425);
+			this.textBoxCoefCor.BackColor = System.Drawing.Color.Silver;
+			this.textBoxCoefCor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.textBoxCoefCor.Location = new System.Drawing.Point(293, 419);
 			this.textBoxCoefCor.Name = "textBoxCoefCor";
 			this.textBoxCoefCor.ReadOnly = true;
 			this.textBoxCoefCor.Size = new System.Drawing.Size(86, 26);
@@ -772,7 +825,9 @@ namespace DataSorting
 			// textBoxA1
 			// 
 			this.textBoxA1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBoxA1.Location = new System.Drawing.Point(244, 335);
+			this.textBoxA1.BackColor = System.Drawing.Color.Silver;
+			this.textBoxA1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.textBoxA1.Location = new System.Drawing.Point(244, 329);
 			this.textBoxA1.Name = "textBoxA1";
 			this.textBoxA1.ReadOnly = true;
 			this.textBoxA1.Size = new System.Drawing.Size(102, 26);
@@ -782,7 +837,9 @@ namespace DataSorting
 			// textBoxCoefDeterm
 			// 
 			this.textBoxCoefDeterm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBoxCoefDeterm.Location = new System.Drawing.Point(293, 452);
+			this.textBoxCoefDeterm.BackColor = System.Drawing.Color.Silver;
+			this.textBoxCoefDeterm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.textBoxCoefDeterm.Location = new System.Drawing.Point(293, 446);
 			this.textBoxCoefDeterm.Name = "textBoxCoefDeterm";
 			this.textBoxCoefDeterm.ReadOnly = true;
 			this.textBoxCoefDeterm.Size = new System.Drawing.Size(86, 26);
@@ -792,7 +849,9 @@ namespace DataSorting
 			// textBoxCoefEl
 			// 
 			this.textBoxCoefEl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBoxCoefEl.Location = new System.Drawing.Point(293, 480);
+			this.textBoxCoefEl.BackColor = System.Drawing.Color.Silver;
+			this.textBoxCoefEl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.textBoxCoefEl.Location = new System.Drawing.Point(293, 474);
 			this.textBoxCoefEl.Name = "textBoxCoefEl";
 			this.textBoxCoefEl.ReadOnly = true;
 			this.textBoxCoefEl.Size = new System.Drawing.Size(86, 26);
@@ -802,7 +861,9 @@ namespace DataSorting
 			// textBoxA0
 			// 
 			this.textBoxA0.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBoxA0.Location = new System.Drawing.Point(106, 335);
+			this.textBoxA0.BackColor = System.Drawing.Color.Silver;
+			this.textBoxA0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.textBoxA0.Location = new System.Drawing.Point(106, 329);
 			this.textBoxA0.Name = "textBoxA0";
 			this.textBoxA0.ReadOnly = true;
 			this.textBoxA0.Size = new System.Drawing.Size(99, 26);
@@ -811,6 +872,8 @@ namespace DataSorting
 			// 
 			// textBoxM
 			// 
+			this.textBoxM.BackColor = System.Drawing.Color.Silver;
+			this.textBoxM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.textBoxM.Location = new System.Drawing.Point(241, 52);
 			this.textBoxM.Name = "textBoxM";
 			this.textBoxM.Size = new System.Drawing.Size(86, 26);
@@ -821,7 +884,7 @@ namespace DataSorting
 			// 
 			this.labelBetaCoef.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelBetaCoef.AutoSize = true;
-			this.labelBetaCoef.Location = new System.Drawing.Point(127, 515);
+			this.labelBetaCoef.Location = new System.Drawing.Point(127, 509);
 			this.labelBetaCoef.Name = "labelBetaCoef";
 			this.labelBetaCoef.Size = new System.Drawing.Size(169, 20);
 			this.labelBetaCoef.TabIndex = 11;
@@ -831,7 +894,7 @@ namespace DataSorting
 			// 
 			this.labelCoefDeterm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelCoefDeterm.AutoSize = true;
-			this.labelCoefDeterm.Location = new System.Drawing.Point(50, 457);
+			this.labelCoefDeterm.Location = new System.Drawing.Point(50, 451);
 			this.labelCoefDeterm.Name = "labelCoefDeterm";
 			this.labelCoefDeterm.Size = new System.Drawing.Size(246, 20);
 			this.labelCoefDeterm.TabIndex = 9;
@@ -841,7 +904,7 @@ namespace DataSorting
 			// 
 			this.labelCoefCor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelCoefCor.AutoSize = true;
-			this.labelCoefCor.Location = new System.Drawing.Point(72, 429);
+			this.labelCoefCor.Location = new System.Drawing.Point(72, 423);
 			this.labelCoefCor.Name = "labelCoefCor";
 			this.labelCoefCor.Size = new System.Drawing.Size(224, 20);
 			this.labelCoefCor.TabIndex = 8;
@@ -851,7 +914,7 @@ namespace DataSorting
 			// 
 			this.labelA0.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelA0.AutoSize = true;
-			this.labelA0.Location = new System.Drawing.Point(73, 338);
+			this.labelA0.Location = new System.Drawing.Point(73, 332);
 			this.labelA0.Name = "labelA0";
 			this.labelA0.Size = new System.Drawing.Size(36, 20);
 			this.labelA0.TabIndex = 7;
@@ -861,7 +924,7 @@ namespace DataSorting
 			// 
 			this.labelA1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelA1.AutoSize = true;
-			this.labelA1.Location = new System.Drawing.Point(211, 338);
+			this.labelA1.Location = new System.Drawing.Point(211, 332);
 			this.labelA1.Name = "labelA1";
 			this.labelA1.Size = new System.Drawing.Size(36, 20);
 			this.labelA1.TabIndex = 6;
@@ -871,7 +934,7 @@ namespace DataSorting
 			// 
 			this.labelCoef.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelCoef.AutoSize = true;
-			this.labelCoef.Location = new System.Drawing.Point(74, 312);
+			this.labelCoef.Location = new System.Drawing.Point(74, 306);
 			this.labelCoef.Name = "labelCoef";
 			this.labelCoef.Size = new System.Drawing.Size(262, 20);
 			this.labelCoef.TabIndex = 5;
@@ -881,7 +944,7 @@ namespace DataSorting
 			// 
 			this.labelCoefEl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelCoefEl.AutoSize = true;
-			this.labelCoefEl.Location = new System.Drawing.Point(55, 483);
+			this.labelCoefEl.Location = new System.Drawing.Point(55, 477);
 			this.labelCoefEl.Name = "labelCoefEl";
 			this.labelCoefEl.Size = new System.Drawing.Size(241, 20);
 			this.labelCoefEl.TabIndex = 4;
@@ -891,7 +954,7 @@ namespace DataSorting
 			// 
 			this.labelSysEq.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelSysEq.AutoSize = true;
-			this.labelSysEq.Location = new System.Drawing.Point(74, 228);
+			this.labelSysEq.Location = new System.Drawing.Point(74, 222);
 			this.labelSysEq.Name = "labelSysEq";
 			this.labelSysEq.Size = new System.Drawing.Size(255, 20);
 			this.labelSysEq.TabIndex = 3;
@@ -937,15 +1000,17 @@ namespace DataSorting
 			// 
 			// ToolStripMenuItemSignIn
 			// 
+			this.ToolStripMenuItemSignIn.BackColor = System.Drawing.Color.DarkGray;
 			this.ToolStripMenuItemSignIn.Name = "ToolStripMenuItemSignIn";
-			this.ToolStripMenuItemSignIn.Size = new System.Drawing.Size(127, 24);
+			this.ToolStripMenuItemSignIn.Size = new System.Drawing.Size(180, 24);
 			this.ToolStripMenuItemSignIn.Text = "Вход";
 			this.ToolStripMenuItemSignIn.Click += new System.EventHandler(this.ToolStripMenuItemSignIn_Click);
 			// 
 			// ToolStripLogOut
 			// 
+			this.ToolStripLogOut.BackColor = System.Drawing.Color.DarkGray;
 			this.ToolStripLogOut.Name = "ToolStripLogOut";
-			this.ToolStripLogOut.Size = new System.Drawing.Size(127, 24);
+			this.ToolStripLogOut.Size = new System.Drawing.Size(180, 24);
 			this.ToolStripLogOut.Text = "Выход";
 			this.ToolStripLogOut.Click += new System.EventHandler(this.ToolStripLogOut_Click);
 			// 
@@ -956,7 +1021,7 @@ namespace DataSorting
 			// 
 			// menuStrip1
 			// 
-			this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
+			this.menuStrip1.BackColor = System.Drawing.Color.DarkGray;
 			this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -972,6 +1037,7 @@ namespace DataSorting
 			// 
 			// toolStripComboBoxPDL
 			// 
+			this.toolStripComboBoxPDL.BackColor = System.Drawing.Color.DarkGray;
 			this.toolStripComboBoxPDL.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.toolStripComboBoxPDL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.toolStripComboBoxPDL.Name = "toolStripComboBoxPDL";
@@ -980,6 +1046,7 @@ namespace DataSorting
 			// 
 			// toolStripComboBoxSort
 			// 
+			this.toolStripComboBoxSort.BackColor = System.Drawing.Color.DarkGray;
 			this.toolStripComboBoxSort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.toolStripComboBoxSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.toolStripComboBoxSort.Name = "toolStripComboBoxSort";
@@ -1004,7 +1071,7 @@ namespace DataSorting
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.Color.White;
+			this.BackColor = System.Drawing.Color.DarkGray;
 			this.ClientSize = new System.Drawing.Size(987, 642);
 			this.Controls.Add(this.tabControlSorting);
 			this.Controls.Add(this.menuStrip1);

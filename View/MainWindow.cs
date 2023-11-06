@@ -27,6 +27,8 @@ namespace DataSorting
 			this.toolStripComboBoxPDL.SelectedIndex = 0;
 			this.toolStripComboBoxSort.Items.Add("MergeSort");
 			this.toolStripComboBoxSort.SelectedIndex = 0;
+			this.comboBoxRecords.Items.Add("История");
+			this.comboBoxRecords.SelectedIndex = 0;
 		}
 
 		private void FillListView(ListView lv, double[] arr)
