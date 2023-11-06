@@ -8,13 +8,21 @@ namespace DataSorting.Controllers
 	{
 		public APDL PDL { get; set; }
 
-		public PDLController(APDL pdl, Dictionary<string, double> kwargs, int n)
+		public PDLController(object pdl, Dictionary<string, double> kwargs, int n)
 		{
-			PDL = pdl;
+			PDL = (APDL)pdl;
 			PDL.n = n;
 			foreach (var key in kwargs.Keys) 
 				PDL.parameters[key] = kwargs[key];
 			PDL.FillArr();
+		}
+
+		public PDLController(object pdl)
+		{
+			PDL = (APDL)pdl;
+			PDL.parameters["A"] = PDL.rnd.NextDouble() * 100;
+			PDL.parameters["B"] = PDL.rnd.NextDouble() * 100;
+			PDL.parameters["C"] = PDL.rnd.NextDouble() * 100;
 		}
 	}
 }

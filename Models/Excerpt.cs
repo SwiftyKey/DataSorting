@@ -33,13 +33,13 @@ namespace DataSorting.Models
 		public void Calculate() {
 			Random rnd = new Random();
 
-			Equations[0][0] = Arr.Length;
 			Equations[0] = new double[3];
+			Equations[0][0] = M;
 			Equations[1] = new double[3];
 
-			for (int i = 0; i < Arr.Length; i++)
+			for (int i = 0; i < M; i++)
 			{
-				pdlController.PDL.n = rnd.Next(9000, 50000);
+				pdlController.PDL.n = rnd.Next(9000, 40000);
 				pdlController.PDL.FillArr();
 				sortController.Sort.Sort(pdlController.PDL.arr);
 
@@ -59,7 +59,10 @@ namespace DataSorting.Models
 			meanSumX = Equations[0][1] / M;
 			meanSumY = Equations[0][2] / M;
 
-			double[] result = Gauss(Equations);
+			double[][] rows = new double[2][];
+			for (int i = 0; i < 2; i++)
+				rows[i] = (double [])Equations[i].Clone();
+			double[] result = Gauss(rows);
 			A0 = result[0];
 			A1 = result[1];
 
@@ -112,9 +115,10 @@ namespace DataSorting.Models
 
 		private void CalcCoefCor()
 		{
-			CoefCor = (M * Equations[1][2] - Equations[0][1] * Equations[0][2]) / 
-			Math.Sqrt((M * Equations[1][1] - Math.Pow(Equations[0][1], 2)) * 
-			(M * squareSumY - Math.Pow(Equations[0][2], 2)));
+			double a = M * Equations[1][1] - Math.Pow(Equations[0][1], 2);
+			double b = M * squareSumY - Math.Pow(Equations[0][2], 2);
+			double c = Math.Sqrt(a) * Math.Sqrt(b);
+			CoefCor = (M * Equations[1][2] - Equations[0][1] * Equations[0][2]) / c;
 		}
 
 		private void CalcCoefDeterm() => CoefDeterm = Math.Pow(CoefCor, 2);
@@ -125,7 +129,7 @@ namespace DataSorting.Models
 		{
 			double meanSquareErrorX = 0, meanSquareErrorY = 0;
 
-			for (int i = 0; i < Arr.Length; i++)
+			for (int i = 0; i < M; i++)
 			{
 				meanSquareErrorX += Math.Pow(Arr[i, 1] - meanSumX, 2);
 				meanSquareErrorY += Math.Pow(Arr[i, 0] - meanSumY, 2);

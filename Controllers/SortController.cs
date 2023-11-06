@@ -6,6 +6,6 @@ namespace DataSorting.Controllers
 	{
 		public ASort Sort {  get; set; }
 
-		public SortController(ASort sort) => Sort = sort;
+		public SortController(object sort) => Sort = (ASort)sort;
 	}
 }

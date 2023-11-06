@@ -34,6 +34,7 @@ namespace DataSorting
 			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
 			System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
 			System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+			System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
 			this.tabControlSorting = new System.Windows.Forms.TabControl();
 			this.tabPageSorting = new System.Windows.Forms.TabPage();
 			this.textBoxC = new System.Windows.Forms.TextBox();
@@ -62,6 +63,21 @@ namespace DataSorting
 			this.labelB = new System.Windows.Forms.Label();
 			this.labelN = new System.Windows.Forms.Label();
 			this.tabPageConEq = new System.Windows.Forms.TabPage();
+			this.textBox8 = new System.Windows.Forms.TextBox();
+			this.textBox7 = new System.Windows.Forms.TextBox();
+			this.label7 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
+			this.label5 = new System.Windows.Forms.Label();
+			this.label4 = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
+			this.textBox6 = new System.Windows.Forms.TextBox();
+			this.textBox5 = new System.Windows.Forms.TextBox();
+			this.textBox4 = new System.Windows.Forms.TextBox();
+			this.textBox3 = new System.Windows.Forms.TextBox();
+			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
 			this.buttonClear2 = new System.Windows.Forms.Button();
 			this.buttonCalc = new System.Windows.Forms.Button();
@@ -74,10 +90,7 @@ namespace DataSorting
 			this.columnHeaderXY = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.labelConEq = new System.Windows.Forms.Label();
 			this.textBoxBetaCoef = new System.Windows.Forms.TextBox();
-			this.textBoxConEq = new System.Windows.Forms.TextBox();
 			this.textBoxCoefCor = new System.Windows.Forms.TextBox();
-			this.textBoxSecondLine = new System.Windows.Forms.TextBox();
-			this.textBoxFirstLine = new System.Windows.Forms.TextBox();
 			this.textBoxA1 = new System.Windows.Forms.TextBox();
 			this.textBoxCoefDeterm = new System.Windows.Forms.TextBox();
 			this.textBoxCoefEl = new System.Windows.Forms.TextBox();
@@ -430,6 +443,21 @@ namespace DataSorting
 			// tabPageConEq
 			// 
 			this.tabPageConEq.BackColor = System.Drawing.Color.Transparent;
+			this.tabPageConEq.Controls.Add(this.textBox8);
+			this.tabPageConEq.Controls.Add(this.textBox7);
+			this.tabPageConEq.Controls.Add(this.label7);
+			this.tabPageConEq.Controls.Add(this.label6);
+			this.tabPageConEq.Controls.Add(this.label5);
+			this.tabPageConEq.Controls.Add(this.label4);
+			this.tabPageConEq.Controls.Add(this.label3);
+			this.tabPageConEq.Controls.Add(this.label2);
+			this.tabPageConEq.Controls.Add(this.label1);
+			this.tabPageConEq.Controls.Add(this.textBox6);
+			this.tabPageConEq.Controls.Add(this.textBox5);
+			this.tabPageConEq.Controls.Add(this.textBox4);
+			this.tabPageConEq.Controls.Add(this.textBox3);
+			this.tabPageConEq.Controls.Add(this.textBox2);
+			this.tabPageConEq.Controls.Add(this.textBox1);
 			this.tabPageConEq.Controls.Add(this.chart);
 			this.tabPageConEq.Controls.Add(this.buttonClear2);
 			this.tabPageConEq.Controls.Add(this.buttonCalc);
@@ -437,10 +465,7 @@ namespace DataSorting
 			this.tabPageConEq.Controls.Add(this.listViewSourceData);
 			this.tabPageConEq.Controls.Add(this.labelConEq);
 			this.tabPageConEq.Controls.Add(this.textBoxBetaCoef);
-			this.tabPageConEq.Controls.Add(this.textBoxConEq);
 			this.tabPageConEq.Controls.Add(this.textBoxCoefCor);
-			this.tabPageConEq.Controls.Add(this.textBoxSecondLine);
-			this.tabPageConEq.Controls.Add(this.textBoxFirstLine);
 			this.tabPageConEq.Controls.Add(this.textBoxA1);
 			this.tabPageConEq.Controls.Add(this.textBoxCoefDeterm);
 			this.tabPageConEq.Controls.Add(this.textBoxCoefEl);
@@ -464,6 +489,148 @@ namespace DataSorting
 			this.tabPageConEq.TabIndex = 1;
 			this.tabPageConEq.Text = "Уравнение связи";
 			// 
+			// textBox8
+			// 
+			this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.textBox8.Location = new System.Drawing.Point(241, 387);
+			this.textBox8.Name = "textBox8";
+			this.textBox8.ReadOnly = true;
+			this.textBox8.Size = new System.Drawing.Size(135, 26);
+			this.textBox8.TabIndex = 248;
+			// 
+			// textBox7
+			// 
+			this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.textBox7.Location = new System.Drawing.Point(76, 387);
+			this.textBox7.Name = "textBox7";
+			this.textBox7.ReadOnly = true;
+			this.textBox7.Size = new System.Drawing.Size(135, 26);
+			this.textBox7.TabIndex = 247;
+			// 
+			// label7
+			// 
+			this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.label7.AutoSize = true;
+			this.label7.Location = new System.Drawing.Point(380, 390);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(16, 20);
+			this.label7.TabIndex = 246;
+			this.label7.Text = "x";
+			// 
+			// label6
+			// 
+			this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.label6.AutoSize = true;
+			this.label6.Location = new System.Drawing.Point(217, 390);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(18, 20);
+			this.label6.TabIndex = 245;
+			this.label6.Text = "+";
+			// 
+			// label5
+			// 
+			this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.label5.AutoSize = true;
+			this.label5.Location = new System.Drawing.Point(41, 390);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(29, 20);
+			this.label5.TabIndex = 244;
+			this.label5.Text = "y =";
+			// 
+			// label4
+			// 
+			this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.label4.AutoSize = true;
+			this.label4.Location = new System.Drawing.Point(269, 289);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(40, 20);
+			this.label4.TabIndex = 243;
+			this.label4.Text = "a1 =";
+			// 
+			// label3
+			// 
+			this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.label3.AutoSize = true;
+			this.label3.Location = new System.Drawing.Point(269, 254);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(40, 20);
+			this.label3.TabIndex = 242;
+			this.label3.Text = "a1 =";
+			// 
+			// label2
+			// 
+			this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.label2.AutoSize = true;
+			this.label2.Location = new System.Drawing.Point(117, 286);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(40, 20);
+			this.label2.TabIndex = 241;
+			this.label2.Text = "a0 +";
+			// 
+			// label1
+			// 
+			this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(117, 254);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(40, 20);
+			this.label1.TabIndex = 240;
+			this.label1.Text = "a0 +";
+			// 
+			// textBox6
+			// 
+			this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.textBox6.Location = new System.Drawing.Point(315, 283);
+			this.textBox6.Name = "textBox6";
+			this.textBox6.ReadOnly = true;
+			this.textBox6.Size = new System.Drawing.Size(100, 26);
+			this.textBox6.TabIndex = 239;
+			// 
+			// textBox5
+			// 
+			this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.textBox5.Location = new System.Drawing.Point(163, 283);
+			this.textBox5.Name = "textBox5";
+			this.textBox5.ReadOnly = true;
+			this.textBox5.Size = new System.Drawing.Size(100, 26);
+			this.textBox5.TabIndex = 238;
+			// 
+			// textBox4
+			// 
+			this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.textBox4.Location = new System.Drawing.Point(11, 283);
+			this.textBox4.Name = "textBox4";
+			this.textBox4.ReadOnly = true;
+			this.textBox4.Size = new System.Drawing.Size(100, 26);
+			this.textBox4.TabIndex = 237;
+			// 
+			// textBox3
+			// 
+			this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.textBox3.Location = new System.Drawing.Point(315, 251);
+			this.textBox3.Name = "textBox3";
+			this.textBox3.ReadOnly = true;
+			this.textBox3.Size = new System.Drawing.Size(100, 26);
+			this.textBox3.TabIndex = 236;
+			// 
+			// textBox2
+			// 
+			this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.textBox2.Location = new System.Drawing.Point(163, 251);
+			this.textBox2.Name = "textBox2";
+			this.textBox2.ReadOnly = true;
+			this.textBox2.Size = new System.Drawing.Size(100, 26);
+			this.textBox2.TabIndex = 235;
+			// 
+			// textBox1
+			// 
+			this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.textBox1.Location = new System.Drawing.Point(11, 251);
+			this.textBox1.Name = "textBox1";
+			this.textBox1.ReadOnly = true;
+			this.textBox1.Size = new System.Drawing.Size(100, 26);
+			this.textBox1.TabIndex = 234;
+			// 
 			// chart
 			// 
 			this.chart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -481,7 +648,13 @@ namespace DataSorting
 			series1.IsVisibleInLegend = false;
 			series1.Legend = "Legend1";
 			series1.Name = "Series1";
+			series2.ChartArea = "ChartArea1";
+			series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastPoint;
+			series2.IsVisibleInLegend = false;
+			series2.Legend = "Legend1";
+			series2.Name = "Series2";
 			this.chart.Series.Add(series1);
+			this.chart.Series.Add(series2);
 			this.chart.Size = new System.Drawing.Size(520, 520);
 			this.chart.TabIndex = 233;
 			this.chart.TabStop = false;
@@ -501,6 +674,7 @@ namespace DataSorting
 			// buttonCalc
 			// 
 			this.buttonCalc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.buttonCalc.Enabled = false;
 			this.buttonCalc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
 			this.buttonCalc.Location = new System.Drawing.Point(82, 545);
 			this.buttonCalc.Name = "buttonCalc";
@@ -532,7 +706,7 @@ namespace DataSorting
             this.columnHeaderXX,
             this.columnHeaderXY});
 			this.listViewSourceData.HideSelection = false;
-			this.listViewSourceData.Location = new System.Drawing.Point(25, 123);
+			this.listViewSourceData.Location = new System.Drawing.Point(25, 114);
 			this.listViewSourceData.Name = "listViewSourceData";
 			this.listViewSourceData.Size = new System.Drawing.Size(371, 111);
 			this.listViewSourceData.TabIndex = 232;
@@ -569,7 +743,7 @@ namespace DataSorting
 			// 
 			this.labelConEq.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelConEq.AutoSize = true;
-			this.labelConEq.Location = new System.Drawing.Point(7, 392);
+			this.labelConEq.Location = new System.Drawing.Point(143, 364);
 			this.labelConEq.Name = "labelConEq";
 			this.labelConEq.Size = new System.Drawing.Size(142, 20);
 			this.labelConEq.TabIndex = 22;
@@ -585,16 +759,6 @@ namespace DataSorting
 			this.textBoxBetaCoef.TabIndex = 21;
 			this.textBoxBetaCoef.TabStop = false;
 			// 
-			// textBoxConEq
-			// 
-			this.textBoxConEq.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBoxConEq.Location = new System.Drawing.Point(155, 389);
-			this.textBoxConEq.Name = "textBoxConEq";
-			this.textBoxConEq.ReadOnly = true;
-			this.textBoxConEq.Size = new System.Drawing.Size(253, 26);
-			this.textBoxConEq.TabIndex = 20;
-			this.textBoxConEq.TabStop = false;
-			// 
 			// textBoxCoefCor
 			// 
 			this.textBoxCoefCor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -605,30 +769,10 @@ namespace DataSorting
 			this.textBoxCoefCor.TabIndex = 19;
 			this.textBoxCoefCor.TabStop = false;
 			// 
-			// textBoxSecondLine
-			// 
-			this.textBoxSecondLine.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBoxSecondLine.Location = new System.Drawing.Point(76, 288);
-			this.textBoxSecondLine.Name = "textBoxSecondLine";
-			this.textBoxSecondLine.ReadOnly = true;
-			this.textBoxSecondLine.Size = new System.Drawing.Size(253, 26);
-			this.textBoxSecondLine.TabIndex = 18;
-			this.textBoxSecondLine.TabStop = false;
-			// 
-			// textBoxFirstLine
-			// 
-			this.textBoxFirstLine.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBoxFirstLine.Location = new System.Drawing.Point(76, 260);
-			this.textBoxFirstLine.Name = "textBoxFirstLine";
-			this.textBoxFirstLine.ReadOnly = true;
-			this.textBoxFirstLine.Size = new System.Drawing.Size(253, 26);
-			this.textBoxFirstLine.TabIndex = 17;
-			this.textBoxFirstLine.TabStop = false;
-			// 
 			// textBoxA1
 			// 
 			this.textBoxA1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBoxA1.Location = new System.Drawing.Point(244, 349);
+			this.textBoxA1.Location = new System.Drawing.Point(244, 335);
 			this.textBoxA1.Name = "textBoxA1";
 			this.textBoxA1.ReadOnly = true;
 			this.textBoxA1.Size = new System.Drawing.Size(102, 26);
@@ -658,7 +802,7 @@ namespace DataSorting
 			// textBoxA0
 			// 
 			this.textBoxA0.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBoxA0.Location = new System.Drawing.Point(106, 349);
+			this.textBoxA0.Location = new System.Drawing.Point(106, 335);
 			this.textBoxA0.Name = "textBoxA0";
 			this.textBoxA0.ReadOnly = true;
 			this.textBoxA0.Size = new System.Drawing.Size(99, 26);
@@ -667,7 +811,7 @@ namespace DataSorting
 			// 
 			// textBoxM
 			// 
-			this.textBoxM.Location = new System.Drawing.Point(241, 62);
+			this.textBoxM.Location = new System.Drawing.Point(241, 52);
 			this.textBoxM.Name = "textBoxM";
 			this.textBoxM.Size = new System.Drawing.Size(86, 26);
 			this.textBoxM.TabIndex = 1;
@@ -707,7 +851,7 @@ namespace DataSorting
 			// 
 			this.labelA0.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelA0.AutoSize = true;
-			this.labelA0.Location = new System.Drawing.Point(73, 352);
+			this.labelA0.Location = new System.Drawing.Point(73, 338);
 			this.labelA0.Name = "labelA0";
 			this.labelA0.Size = new System.Drawing.Size(36, 20);
 			this.labelA0.TabIndex = 7;
@@ -717,7 +861,7 @@ namespace DataSorting
 			// 
 			this.labelA1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelA1.AutoSize = true;
-			this.labelA1.Location = new System.Drawing.Point(211, 352);
+			this.labelA1.Location = new System.Drawing.Point(211, 338);
 			this.labelA1.Name = "labelA1";
 			this.labelA1.Size = new System.Drawing.Size(36, 20);
 			this.labelA1.TabIndex = 6;
@@ -727,7 +871,7 @@ namespace DataSorting
 			// 
 			this.labelCoef.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelCoef.AutoSize = true;
-			this.labelCoef.Location = new System.Drawing.Point(74, 326);
+			this.labelCoef.Location = new System.Drawing.Point(74, 312);
 			this.labelCoef.Name = "labelCoef";
 			this.labelCoef.Size = new System.Drawing.Size(262, 20);
 			this.labelCoef.TabIndex = 5;
@@ -737,7 +881,7 @@ namespace DataSorting
 			// 
 			this.labelCoefEl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelCoefEl.AutoSize = true;
-			this.labelCoefEl.Location = new System.Drawing.Point(55, 487);
+			this.labelCoefEl.Location = new System.Drawing.Point(55, 483);
 			this.labelCoefEl.Name = "labelCoefEl";
 			this.labelCoefEl.Size = new System.Drawing.Size(241, 20);
 			this.labelCoefEl.TabIndex = 4;
@@ -747,7 +891,7 @@ namespace DataSorting
 			// 
 			this.labelSysEq.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.labelSysEq.AutoSize = true;
-			this.labelSysEq.Location = new System.Drawing.Point(74, 237);
+			this.labelSysEq.Location = new System.Drawing.Point(74, 228);
 			this.labelSysEq.Name = "labelSysEq";
 			this.labelSysEq.Size = new System.Drawing.Size(255, 20);
 			this.labelSysEq.TabIndex = 3;
@@ -766,7 +910,7 @@ namespace DataSorting
 			// labelSourceData
 			// 
 			this.labelSourceData.AutoSize = true;
-			this.labelSourceData.Location = new System.Drawing.Point(74, 100);
+			this.labelSourceData.Location = new System.Drawing.Point(74, 91);
 			this.labelSourceData.Name = "labelSourceData";
 			this.labelSourceData.Size = new System.Drawing.Size(272, 20);
 			this.labelSourceData.TabIndex = 1;
@@ -775,7 +919,7 @@ namespace DataSorting
 			// labelM
 			// 
 			this.labelM.AutoSize = true;
-			this.labelM.Location = new System.Drawing.Point(81, 65);
+			this.labelM.Location = new System.Drawing.Point(81, 55);
 			this.labelM.Name = "labelM";
 			this.labelM.Size = new System.Drawing.Size(161, 20);
 			this.labelM.TabIndex = 0;
@@ -929,10 +1073,7 @@ namespace DataSorting
 		private Label labelSourceData;
 		private Label labelM;
 		private TextBox textBoxBetaCoef;
-		private TextBox textBoxConEq;
 		private TextBox textBoxCoefCor;
-		private TextBox textBoxSecondLine;
-		private TextBox textBoxFirstLine;
 		private TextBox textBoxA1;
 		private TextBox textBoxCoefDeterm;
 		private TextBox textBoxCoefEl;
@@ -957,5 +1098,20 @@ namespace DataSorting
 		private ToolStripMenuItem выходToolStripMenuItem;
 		private ToolStripComboBox toolStripComboBoxPDL;
 		private ToolStripComboBox toolStripComboBoxSort;
+		private Label label4;
+		private Label label3;
+		private Label label2;
+		private Label label1;
+		private TextBox textBox6;
+		private TextBox textBox5;
+		private TextBox textBox4;
+		private TextBox textBox3;
+		private TextBox textBox2;
+		private TextBox textBox1;
+		private TextBox textBox8;
+		private TextBox textBox7;
+		private Label label7;
+		private Label label6;
+		private Label label5;
 	}
 }
