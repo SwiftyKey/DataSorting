@@ -31,10 +31,10 @@ namespace DataSorting
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-			System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-			System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-			System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+			System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+			System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+			System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
 			this.tabControlSorting = new System.Windows.Forms.TabControl();
 			this.tabPageSorting = new System.Windows.Forms.TabPage();
 			this.textBoxC = new System.Windows.Forms.TextBox();
@@ -339,6 +339,7 @@ namespace DataSorting
 			this.listViewSourceArr.GridLines = true;
 			this.listViewSourceArr.HideSelection = false;
 			this.listViewSourceArr.Location = new System.Drawing.Point(398, 46);
+			this.listViewSourceArr.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
 			this.listViewSourceArr.Name = "listViewSourceArr";
 			this.listViewSourceArr.Size = new System.Drawing.Size(268, 507);
 			this.listViewSourceArr.TabIndex = 6;
@@ -361,7 +362,7 @@ namespace DataSorting
 			this.pictureBoxFx.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
 			this.pictureBoxFx.Enabled = false;
-			this.pictureBoxFx.Location = new System.Drawing.Point(72, 159);
+			this.pictureBoxFx.Location = new System.Drawing.Point(68, 157);
 			this.pictureBoxFx.Name = "pictureBoxFx";
 			this.pictureBoxFx.Size = new System.Drawing.Size(258, 175);
 			this.pictureBoxFx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -677,26 +678,26 @@ namespace DataSorting
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.chart.BackColor = System.Drawing.Color.LightGray;
 			this.chart.BorderlineColor = System.Drawing.Color.DarkGray;
-			chartArea6.Name = "ChartArea1";
-			this.chart.ChartAreas.Add(chartArea6);
+			chartArea1.Name = "ChartArea1";
+			this.chart.ChartAreas.Add(chartArea1);
 			this.chart.Cursor = System.Windows.Forms.Cursors.Cross;
-			legend6.BackColor = System.Drawing.Color.Silver;
-			legend6.Name = "Legend1";
-			this.chart.Legends.Add(legend6);
+			legend1.BackColor = System.Drawing.Color.Silver;
+			legend1.Name = "Legend1";
+			this.chart.Legends.Add(legend1);
 			this.chart.Location = new System.Drawing.Point(449, 52);
 			this.chart.Name = "chart";
-			series11.ChartArea = "ChartArea1";
-			series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastPoint;
-			series11.IsVisibleInLegend = false;
-			series11.Legend = "Legend1";
-			series11.Name = "Series1";
-			series12.ChartArea = "ChartArea1";
-			series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastPoint;
-			series12.IsVisibleInLegend = false;
-			series12.Legend = "Legend1";
-			series12.Name = "Series2";
-			this.chart.Series.Add(series11);
-			this.chart.Series.Add(series12);
+			series1.ChartArea = "ChartArea1";
+			series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastPoint;
+			series1.IsVisibleInLegend = false;
+			series1.Legend = "Legend1";
+			series1.Name = "Series1";
+			series2.ChartArea = "ChartArea1";
+			series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastPoint;
+			series2.IsVisibleInLegend = false;
+			series2.Legend = "Legend1";
+			series2.Name = "Series2";
+			this.chart.Series.Add(series1);
+			this.chart.Series.Add(series2);
 			this.chart.Size = new System.Drawing.Size(520, 514);
 			this.chart.TabIndex = 233;
 			this.chart.TabStop = false;

@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Resources;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Reflection;
 
@@ -31,10 +27,11 @@ namespace DataSorting
 			this.comboBoxRecords.SelectedIndex = 0;
 		}
 
-		private void FillListView(ListView lv, double[] arr)
+		private void FillListView(System.Windows.Forms.ListView lv, double[] arr)
 		{
-			for (int i = 0; i < arr.Length; i++)
-				lv.Items.Add(new ListViewItem(new[] { (i + 1).ToString(), arr[i].ToString() }));
+			int count = 1;
+			lv.Items.AddRange(arr.Select(element => new ListViewItem(
+			new[] { count++.ToString(), element.ToString() })).ToArray());
 		}
 
 		private void ClearOutput()
@@ -181,37 +178,32 @@ namespace DataSorting
 			textBoxCoefDeterm.Text = excerptController.Excerpt.CoefDeterm.ToString();
 			textBoxCoefEl.Text = excerptController.Excerpt.CoefEl.ToString();
 			textBoxBetaCoef.Text = excerptController.Excerpt.BetaCoef.ToString();
-			textBox1.Text = excerptController.Excerpt.M.ToString();
+			textBox1.Text = textBoxM.Text;
 			textBox2.Text = excerptController.Excerpt.Equations[0][1].ToString();
 			textBox3.Text = excerptController.Excerpt.Equations[0][2].ToString();
 			textBox4.Text = excerptController.Excerpt.Equations[1][0].ToString();
 			textBox5.Text = excerptController.Excerpt.Equations[1][1].ToString();
 			textBox6.Text = excerptController.Excerpt.Equations[1][2].ToString();
-			textBox7.Text = excerptController.Excerpt.A0.ToString();
-			textBox8.Text = excerptController.Excerpt.A1.ToString();
+			textBox7.Text = textBoxA0.Text;
+			textBox8.Text = textBoxA1.Text;
 
 			DrawChart();
 		}
 
 		private void DrawChart()
 		{
-			double minValueX = 50000, maxValueX = 9000;
 			double minValueY = 1500, maxValueY = 0;
 
 			for (int i = 0; i < excerptController.Excerpt.M; i++)
 			{
-				if (excerptController.Excerpt.Arr[i, 1] < minValueX)
-					minValueX = excerptController.Excerpt.Arr[i, 1];
-				if (excerptController.Excerpt.Arr[i, 1] > maxValueX)
-					maxValueX = excerptController.Excerpt.Arr[i, 1];
 				if (excerptController.Excerpt.Arr[i, 0] < minValueY)
 					minValueY = excerptController.Excerpt.Arr[i, 0];
 				if (excerptController.Excerpt.Arr[i, 0] > maxValueY)
 					maxValueY = excerptController.Excerpt.Arr[i, 0];
 			}
 
-			chart.ChartAreas[0].AxisX.Minimum = minValueX;
-			chart.ChartAreas[0].AxisX.Maximum = maxValueX;
+			chart.ChartAreas[0].AxisX.Minimum = 9000;
+			chart.ChartAreas[0].AxisX.Maximum = 50000;
 			chart.ChartAreas[0].AxisY.Minimum = minValueY;
 			chart.ChartAreas[0].AxisY.Maximum = maxValueY;
 
