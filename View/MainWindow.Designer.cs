@@ -31,10 +31,10 @@ namespace DataSorting
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-			System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-			System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-			System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+			System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+			System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+			System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
 			this.tabControlSorting = new System.Windows.Forms.TabControl();
 			this.tabPageSorting = new System.Windows.Forms.TabPage();
 			this.textBoxC = new System.Windows.Forms.TextBox();
@@ -117,6 +117,7 @@ namespace DataSorting
 			this.toolStripMenuItemUser = new System.Windows.Forms.ToolStripMenuItem();
 			this.ToolStripMenuItemLogIn = new System.Windows.Forms.ToolStripMenuItem();
 			this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.ToolStripMenuItemRef = new System.Windows.Forms.ToolStripMenuItem();
 			this.tabControlSorting.SuspendLayout();
 			this.tabPageSorting.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDownN)).BeginInit();
@@ -678,26 +679,26 @@ namespace DataSorting
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.chart.BackColor = System.Drawing.Color.LightGray;
 			this.chart.BorderlineColor = System.Drawing.Color.DarkGray;
-			chartArea1.Name = "ChartArea1";
-			this.chart.ChartAreas.Add(chartArea1);
+			chartArea2.Name = "ChartArea1";
+			this.chart.ChartAreas.Add(chartArea2);
 			this.chart.Cursor = System.Windows.Forms.Cursors.Cross;
-			legend1.BackColor = System.Drawing.Color.Silver;
-			legend1.Name = "Legend1";
-			this.chart.Legends.Add(legend1);
+			legend2.BackColor = System.Drawing.Color.Silver;
+			legend2.Name = "Legend1";
+			this.chart.Legends.Add(legend2);
 			this.chart.Location = new System.Drawing.Point(449, 52);
 			this.chart.Name = "chart";
-			series1.ChartArea = "ChartArea1";
-			series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastPoint;
-			series1.IsVisibleInLegend = false;
-			series1.Legend = "Legend1";
-			series1.Name = "Series1";
-			series2.ChartArea = "ChartArea1";
-			series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastPoint;
-			series2.IsVisibleInLegend = false;
-			series2.Legend = "Legend1";
-			series2.Name = "Series2";
-			this.chart.Series.Add(series1);
-			this.chart.Series.Add(series2);
+			series3.ChartArea = "ChartArea1";
+			series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastPoint;
+			series3.IsVisibleInLegend = false;
+			series3.Legend = "Legend1";
+			series3.Name = "Series1";
+			series4.ChartArea = "ChartArea1";
+			series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastPoint;
+			series4.IsVisibleInLegend = false;
+			series4.Legend = "Legend1";
+			series4.Name = "Series2";
+			this.chart.Series.Add(series3);
+			this.chart.Series.Add(series4);
 			this.chart.Size = new System.Drawing.Size(520, 514);
 			this.chart.TabIndex = 233;
 			this.chart.TabStop = false;
@@ -1027,6 +1028,7 @@ namespace DataSorting
 			this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuUser,
+            this.ToolStripMenuItemRef,
             this.toolStripComboBoxPDL,
             this.toolStripComboBoxSort});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -1067,6 +1069,13 @@ namespace DataSorting
 			// 
 			this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
 			this.выходToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+			// 
+			// ToolStripMenuItemRef
+			// 
+			this.ToolStripMenuItemRef.Name = "ToolStripMenuItemRef";
+			this.ToolStripMenuItemRef.Size = new System.Drawing.Size(85, 28);
+			this.ToolStripMenuItemRef.Text = "Справка";
+			this.ToolStripMenuItemRef.Click += new System.EventHandler(this.ToolStripMenuItemRef_Click);
 			// 
 			// MainWindow
 			// 
@@ -1181,5 +1190,6 @@ namespace DataSorting
 		private Label label7;
 		private Label label6;
 		private Label label5;
+		private ToolStripMenuItem ToolStripMenuItemRef;
 	}
 }

@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using System.Reflection;
 
 using DataSorting.Controllers;
+using DataSorting.View;
 
 namespace DataSorting
 {
@@ -247,6 +248,12 @@ namespace DataSorting
 		private void textBoxM_TextChanged(object sender, EventArgs e)
 		{
 			buttonCalc.Enabled = (textBoxM.Text != "");
+		}
+
+		private void ToolStripMenuItemRef_Click(object sender, EventArgs e)
+		{
+			Form refForm = new RefForm();
+			refForm.Show();
 		}
 	}
 }
