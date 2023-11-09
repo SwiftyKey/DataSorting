@@ -69,6 +69,11 @@
     <Compile Include="Controllers\ExcerptController.cs" />
     <Compile Include="Controllers\PDLController.cs" />
     <Compile Include="Controllers\SortController.cs" />
+    <Compile Include="Models\DB\Coefs.cs" />
+    <Compile Include="Models\DB\Equations.cs" />
+    <Compile Include="Models\DB\Excerpts.cs" />
+    <Compile Include="Models\DB\Records.cs" />
+    <Compile Include="Models\DB\Users.cs" />
     <Compile Include="Models\Excerpt.cs" />
     <Compile Include="View\MainWindow.cs">
       <SubType>Form</SubType>
@@ -102,6 +107,7 @@
     <EmbeddedResource Include="View\RefForm.resx">
       <DependentUpon>RefForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Models\DB\DSStorage.db" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -121,9 +127,7 @@
     <Content Include="Images\FiskFx.png" />
     <Content Include="Images\Icon.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DB\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
       <Visible>False</Visible>
