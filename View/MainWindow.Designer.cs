@@ -31,10 +31,11 @@ namespace DataSorting
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-			System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+			System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+			System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+			System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
 			System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-			System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
 			this.tabControlSorting = new System.Windows.Forms.TabControl();
 			this.tabPageSorting = new System.Windows.Forms.TabPage();
 			this.textBoxC = new System.Windows.Forms.TextBox();
@@ -81,7 +82,6 @@ namespace DataSorting
 			this.chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
 			this.buttonClear2 = new System.Windows.Forms.Button();
 			this.buttonCalc = new System.Windows.Forms.Button();
-			this.comboBoxRecords = new System.Windows.Forms.ComboBox();
 			this.listViewSourceData = new System.Windows.Forms.ListView();
 			this.columnHeaderId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.columnHeaderTimeY = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -107,17 +107,14 @@ namespace DataSorting
 			this.labelGraph = new System.Windows.Forms.Label();
 			this.labelSourceData = new System.Windows.Forms.Label();
 			this.labelM = new System.Windows.Forms.Label();
-			this.ToolStripMenuUser = new System.Windows.Forms.ToolStripMenuItem();
-			this.ToolStripMenuItemSignIn = new System.Windows.Forms.ToolStripMenuItem();
-			this.ToolStripLogOut = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+			this.ToolStripMenuItemRef = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripComboBoxPDL = new System.Windows.Forms.ToolStripComboBox();
 			this.toolStripComboBoxSort = new System.Windows.Forms.ToolStripComboBox();
 			this.toolStripMenuItemUser = new System.Windows.Forms.ToolStripMenuItem();
 			this.ToolStripMenuItemLogIn = new System.Windows.Forms.ToolStripMenuItem();
 			this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.ToolStripMenuItemRef = new System.Windows.Forms.ToolStripMenuItem();
 			this.tabControlSorting.SuspendLayout();
 			this.tabPageSorting.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDownN)).BeginInit();
@@ -486,7 +483,6 @@ namespace DataSorting
 			this.tabPageConEq.Controls.Add(this.chart);
 			this.tabPageConEq.Controls.Add(this.buttonClear2);
 			this.tabPageConEq.Controls.Add(this.buttonCalc);
-			this.tabPageConEq.Controls.Add(this.comboBoxRecords);
 			this.tabPageConEq.Controls.Add(this.listViewSourceData);
 			this.tabPageConEq.Controls.Add(this.labelConEq);
 			this.tabPageConEq.Controls.Add(this.textBoxBetaCoef);
@@ -519,7 +515,7 @@ namespace DataSorting
 			this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.textBox8.BackColor = System.Drawing.Color.Silver;
 			this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.textBox8.Location = new System.Drawing.Point(241, 381);
+			this.textBox8.Location = new System.Drawing.Point(243, 381);
 			this.textBox8.Name = "textBox8";
 			this.textBox8.ReadOnly = true;
 			this.textBox8.Size = new System.Drawing.Size(135, 26);
@@ -679,26 +675,33 @@ namespace DataSorting
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.chart.BackColor = System.Drawing.Color.LightGray;
 			this.chart.BorderlineColor = System.Drawing.Color.DarkGray;
-			chartArea2.Name = "ChartArea1";
-			this.chart.ChartAreas.Add(chartArea2);
+			chartArea1.Name = "ChartArea1";
+			this.chart.ChartAreas.Add(chartArea1);
 			this.chart.Cursor = System.Windows.Forms.Cursors.Cross;
-			legend2.BackColor = System.Drawing.Color.Silver;
-			legend2.Name = "Legend1";
-			this.chart.Legends.Add(legend2);
+			legend1.BackColor = System.Drawing.Color.Silver;
+			legend1.Name = "Legend1";
+			this.chart.Legends.Add(legend1);
 			this.chart.Location = new System.Drawing.Point(449, 52);
 			this.chart.Name = "chart";
+			series1.ChartArea = "ChartArea1";
+			series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastPoint;
+			series1.IsVisibleInLegend = false;
+			series1.Legend = "Legend1";
+			series1.Name = "Series1";
+			series2.ChartArea = "ChartArea1";
+			series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastPoint;
+			series2.IsVisibleInLegend = false;
+			series2.Legend = "Legend1";
+			series2.Name = "Series2";
 			series3.ChartArea = "ChartArea1";
-			series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastPoint;
+			series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
+			series3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			series3.IsVisibleInLegend = false;
 			series3.Legend = "Legend1";
-			series3.Name = "Series1";
-			series4.ChartArea = "ChartArea1";
-			series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastPoint;
-			series4.IsVisibleInLegend = false;
-			series4.Legend = "Legend1";
-			series4.Name = "Series2";
+			series3.Name = "Series3";
+			this.chart.Series.Add(series1);
+			this.chart.Series.Add(series2);
 			this.chart.Series.Add(series3);
-			this.chart.Series.Add(series4);
 			this.chart.Size = new System.Drawing.Size(520, 514);
 			this.chart.TabIndex = 233;
 			this.chart.TabStop = false;
@@ -732,17 +735,6 @@ namespace DataSorting
 			this.buttonCalc.UseVisualStyleBackColor = false;
 			this.buttonCalc.Click += new System.EventHandler(this.buttonCalc_Click);
 			// 
-			// comboBoxRecords
-			// 
-			this.comboBoxRecords.BackColor = System.Drawing.Color.Silver;
-			this.comboBoxRecords.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBoxRecords.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.comboBoxRecords.FormattingEnabled = true;
-			this.comboBoxRecords.Location = new System.Drawing.Point(76, 14);
-			this.comboBoxRecords.Name = "comboBoxRecords";
-			this.comboBoxRecords.Size = new System.Drawing.Size(253, 28);
-			this.comboBoxRecords.TabIndex = 0;
-			// 
 			// listViewSourceData
 			// 
 			this.listViewSourceData.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -757,9 +749,9 @@ namespace DataSorting
             this.columnHeaderXY});
 			this.listViewSourceData.GridLines = true;
 			this.listViewSourceData.HideSelection = false;
-			this.listViewSourceData.Location = new System.Drawing.Point(25, 114);
+			this.listViewSourceData.Location = new System.Drawing.Point(25, 75);
 			this.listViewSourceData.Name = "listViewSourceData";
-			this.listViewSourceData.Size = new System.Drawing.Size(371, 105);
+			this.listViewSourceData.Size = new System.Drawing.Size(371, 144);
 			this.listViewSourceData.TabIndex = 232;
 			this.listViewSourceData.TabStop = false;
 			this.listViewSourceData.UseCompatibleStateImageBehavior = false;
@@ -876,7 +868,7 @@ namespace DataSorting
 			// 
 			this.textBoxM.BackColor = System.Drawing.Color.Silver;
 			this.textBoxM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.textBoxM.Location = new System.Drawing.Point(241, 52);
+			this.textBoxM.Location = new System.Drawing.Point(244, 14);
 			this.textBoxM.Name = "textBoxM";
 			this.textBoxM.Size = new System.Drawing.Size(86, 26);
 			this.textBoxM.TabIndex = 1;
@@ -975,7 +967,7 @@ namespace DataSorting
 			// labelSourceData
 			// 
 			this.labelSourceData.AutoSize = true;
-			this.labelSourceData.Location = new System.Drawing.Point(74, 91);
+			this.labelSourceData.Location = new System.Drawing.Point(74, 52);
 			this.labelSourceData.Name = "labelSourceData";
 			this.labelSourceData.Size = new System.Drawing.Size(272, 20);
 			this.labelSourceData.TabIndex = 1;
@@ -984,37 +976,11 @@ namespace DataSorting
 			// labelM
 			// 
 			this.labelM.AutoSize = true;
-			this.labelM.Location = new System.Drawing.Point(81, 55);
+			this.labelM.Location = new System.Drawing.Point(84, 17);
 			this.labelM.Name = "labelM";
 			this.labelM.Size = new System.Drawing.Size(161, 20);
 			this.labelM.TabIndex = 0;
 			this.labelM.Text = "Объем выборки(M)=";
-			// 
-			// ToolStripMenuUser
-			// 
-			this.ToolStripMenuUser.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuItemSignIn,
-            this.ToolStripLogOut});
-			this.ToolStripMenuUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-			this.ToolStripMenuUser.Name = "ToolStripMenuUser";
-			this.ToolStripMenuUser.Size = new System.Drawing.Size(133, 28);
-			this.ToolStripMenuUser.Text = "Пользователь";
-			// 
-			// ToolStripMenuItemSignIn
-			// 
-			this.ToolStripMenuItemSignIn.BackColor = System.Drawing.Color.DarkGray;
-			this.ToolStripMenuItemSignIn.Name = "ToolStripMenuItemSignIn";
-			this.ToolStripMenuItemSignIn.Size = new System.Drawing.Size(180, 24);
-			this.ToolStripMenuItemSignIn.Text = "Вход";
-			this.ToolStripMenuItemSignIn.Click += new System.EventHandler(this.ToolStripMenuItemSignIn_Click);
-			// 
-			// ToolStripLogOut
-			// 
-			this.ToolStripLogOut.BackColor = System.Drawing.Color.DarkGray;
-			this.ToolStripLogOut.Name = "ToolStripLogOut";
-			this.ToolStripLogOut.Size = new System.Drawing.Size(180, 24);
-			this.ToolStripLogOut.Text = "Выход";
-			this.ToolStripLogOut.Click += new System.EventHandler(this.ToolStripLogOut_Click);
 			// 
 			// toolStripMenuItem1
 			// 
@@ -1027,7 +993,6 @@ namespace DataSorting
 			this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuUser,
             this.ToolStripMenuItemRef,
             this.toolStripComboBoxPDL,
             this.toolStripComboBoxSort});
@@ -1037,6 +1002,13 @@ namespace DataSorting
 			this.menuStrip1.Size = new System.Drawing.Size(987, 32);
 			this.menuStrip1.TabIndex = 2;
 			this.menuStrip1.Text = "menuStrip1";
+			// 
+			// ToolStripMenuItemRef
+			// 
+			this.ToolStripMenuItemRef.Name = "ToolStripMenuItemRef";
+			this.ToolStripMenuItemRef.Size = new System.Drawing.Size(85, 28);
+			this.ToolStripMenuItemRef.Text = "Справка";
+			this.ToolStripMenuItemRef.Click += new System.EventHandler(this.ToolStripMenuItemRef_Click);
 			// 
 			// toolStripComboBoxPDL
 			// 
@@ -1069,13 +1041,6 @@ namespace DataSorting
 			// 
 			this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
 			this.выходToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
-			// 
-			// ToolStripMenuItemRef
-			// 
-			this.ToolStripMenuItemRef.Name = "ToolStripMenuItemRef";
-			this.ToolStripMenuItemRef.Size = new System.Drawing.Size(85, 28);
-			this.ToolStripMenuItemRef.Text = "Справка";
-			this.ToolStripMenuItemRef.Click += new System.EventHandler(this.ToolStripMenuItemRef_Click);
 			// 
 			// MainWindow
 			// 
@@ -1135,9 +1100,6 @@ namespace DataSorting
 		private TabPage tabPageConEq;
 		private Button buttonClear;
 		private Button buttonGen;
-		private ToolStripMenuItem ToolStripMenuUser;
-		private ToolStripMenuItem ToolStripMenuItemSignIn;
-		private ToolStripMenuItem ToolStripLogOut;
 		private Label labelBetaCoef;
 		private Label labelCoefDeterm;
 		private Label labelCoefCor;
@@ -1163,7 +1125,6 @@ namespace DataSorting
 		private ColumnHeader columnHeaderSizeX;
 		private ColumnHeader columnHeaderXX;
 		private ColumnHeader columnHeaderXY;
-		private ComboBox comboBoxRecords;
 		private Button buttonClear2;
 		private Button buttonCalc;
 		private System.Windows.Forms.DataVisualization.Charting.Chart chart;

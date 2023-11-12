@@ -24,8 +24,6 @@ namespace DataSorting
 			this.toolStripComboBoxPDL.SelectedIndex = 0;
 			this.toolStripComboBoxSort.Items.Add("MergeSort");
 			this.toolStripComboBoxSort.SelectedIndex = 0;
-			this.comboBoxRecords.Items.Add("История");
-			this.comboBoxRecords.SelectedIndex = 0;
 		}
 
 		private void FillListView(System.Windows.Forms.ListView lv, double[] arr)
@@ -210,9 +208,11 @@ namespace DataSorting
 
 			for (int i = 0; i < excerptController.Excerpt.M; i++)
 			{
-				chart.Series[0].Points.AddXY(excerptController.Excerpt.Arr[i, 1], excerptController.Excerpt.Arr[i, 0]);
-				chart.Series[1].Points.AddXY(excerptController.Excerpt.Arr[i, 1],
-				excerptController.Excerpt.A0 + excerptController.Excerpt.A1 * excerptController.Excerpt.Arr[i, 1]);
+				var x = excerptController.Excerpt.Arr[i, 1];
+				chart.Series[0].Points.AddXY(x, excerptController.Excerpt.Arr[i, 0]);
+				var y = excerptController.Excerpt.A0 + excerptController.Excerpt.A1 * x;
+				chart.Series[1].Points.AddXY(x, y);
+				chart.Series[2].Points.AddXY(x, y);
 			}
 		}
 
