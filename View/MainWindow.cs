@@ -68,7 +68,8 @@ namespace DataSorting
 			buttonGen.Enabled = (textBoxA.Text != "" && textBoxB.Text != "" && textBoxC.Text != "");
 		}
 
-		private Object GetModel(string path, string name) {
+		private Object GetModel(string path, string name)
+		{
 			return Activator.CreateInstance(Type.GetType(path + name));
 		}
 
@@ -220,16 +221,6 @@ namespace DataSorting
 		{
 			textBoxM.Clear();
 			ClearOutput2();
-		}
-
-		private void ToolStripMenuItemSignIn_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void ToolStripLogOut_Click(object sender, EventArgs e)
-		{
-
 		}
 
 		private void textBoxA_TextChanged(object sender, EventArgs e) => ButtonGenEnabled();

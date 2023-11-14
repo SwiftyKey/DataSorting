@@ -47,7 +47,8 @@ namespace DataSorting.Models
 			}
 		}
 
-		public Fisk() {
+		public Fisk()
+		{
 			randMax = 32767;
 			rnd = new Random();
 			parameters = new Dictionary<string, double>();

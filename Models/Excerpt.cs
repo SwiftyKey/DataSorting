@@ -30,7 +30,8 @@ namespace DataSorting.Models
 			this.sortController = sortController;
 		}
 
-		public void Calculate() {
+		public void Calculate()
+		{
 			Random rnd = new Random();
 
 			Equations[0] = new double[3];
